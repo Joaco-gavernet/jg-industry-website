@@ -1,0 +1,37 @@
+// Archivo .scss para index.html, inicio de la pagina
+.inicio__titulo {
+	color: #16171E;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	.inicio__tituloH3 {
+		@include font(1rem, none, uppercase);
+		letter-spacing: .05rem;
+		display: inline-block;
+	}
+	
+	.inicio__tituloH1 {
+		@include font(3.8rem, 800, uppercase);
+		letter-spacing: .5rem;
+		margin-bottom: .7rem;
+		
+		& a:hover {
+			color: $color-claro;
+		}
+		
+		/* .inicio__tituloH1Left {
+		} */
+		
+		/* .inicio__tituloH1Right {
+		} */
+	}
+		
+	.inicio__tituloH4 {
+		@include font(.7rem, none, uppercase);
+		letter-spacing: .05rem;
+		display: inline-block;
+	}
+}

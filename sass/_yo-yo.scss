@@ -1,0 +1,106 @@
+// Archivo yo-yo.html
+.soltate {
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+	background: $color-cielo;
+	color: $color-claro;
+	
+	.soltate__h2 {
+		@include font($h2-font, 800, uppercase);
+		letter-spacing: .18;
+		padding: 20px 0 20px 1vw;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.soltate__imagen {
+		width: 90%;
+		margin: 0 5% 15px 5%;
+	}
+	
+	.soltate__p {
+		@include font(.9rem, 500, none);
+		letter-spacing: .1rem;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		padding-top: 2vh;
+	}
+
+	.soltate__bold {
+		@include font(.9rem, 800, none);
+		// color: $color-oscuro;
+	}
+	
+	.soltate__h3 {
+		@include font(1rem, 800, uppercase);
+		letter-spacing: .15rem;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		padding-top: 2vh;
+	}
+}
+
+.virtudesydefectos {
+	width: 59.98%;
+	height: 100%;
+	background: $color-salmon;
+	// background: $color-claro;
+	display: inline-block;
+	
+	.virtudesydefectos__h2 {
+		@include font(2.8rem, 800, uppercase);
+		letter-spacing: .18;
+		padding: 20px 0 20px 1vw;
+		text-align: center;
+		transition: color 2s;
+	}
+	
+	#virtudes {
+		display: none;
+		&:target {
+			display: block;
+			
+			& #defectos {
+				display: none;
+			}
+		}
+	}
+	
+	#defectos {
+		display: none;
+		
+		&:target {
+			display: block;
+	
+			& #virtudes {
+				display: none;
+			}
+		}
+	}
+	
+	.yoyo__contenedor {
+		width: 90%;
+		margin: auto;
+		margin-bottom: 25px;
+		
+		.yoyo__virtud {
+			@include font(1.5rem, 800, none);
+			letter-spacing: .15rem;
+			margin: 0 0 0.2vw 3vw;
+		}
+		
+		.yoyo__descripcion {
+			@include font(.9rem, 500, none);
+			letter-spacing: .1rem;
+			margin-right: 3vw;
+		}
+		
+		.yoyo__bold {
+			@include font(.9rem, 800, none);
+		}
+	}
+}

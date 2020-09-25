@@ -1,0 +1,144 @@
+// Archivo trabajos.html
+.trabajos__h2 {
+	color: $color-oscuro;
+	background: #e4d9d9;
+	// font-size: $h2-font;
+	// font-weight: 800;
+	// text-transform: uppercase;
+	@include font($h2-font, 800, uppercase);
+	letter-spacing: 6px;
+	width: 100%;
+	padding: 20px 0 20px 5vw;
+}
+
+.trabajos__workLink {
+	width: 100%;
+	overflow: hidden;
+	
+	.work__contenidoP {
+		padding-top: 10px;
+	}
+	
+	.trabajos__work1,
+	.trabajos__work2,
+	.trabajos__work3,
+	.trabajos__work4 {
+		transition: transform 1.5s ease-in;
+	}
+	
+	.trabajos__work1:hover,
+	.trabajos__work2:hover,
+	.trabajos__work3:hover,
+	.trabajos__work4:hover {
+		transform: scale(1.1);
+	}
+	
+	.trabajos__work1 {
+		background: no-repeat center/100% url("../img/gabiota-horizontal.png");
+		width: 100%;
+		background-size: contain;
+		padding: 27.1%;
+		position: relative;
+	}
+	
+	#trabajos__work1 {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to top, #88888800, #00000099);
+		color: $color-claro;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 8vh 0 0 8vw;
+		display: none;
+		opacity: 0;
+		transition: opacity 2s;
+	}
+	
+	#trabajos__work1:target {
+		display: block;
+		opacity: .8;
+	}
+	
+	.trabajos__work2 {
+		background: no-repeat center/100% url('../img/perro-paisaje-horizontal.png');
+		width: 100%;
+		background-size: contain;
+		padding: 27.1%;
+		position: relative;
+	}
+	
+	#trabajos__work2 {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to top, #88888800, #00000099);
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 8vh 0 0 8vw;
+		color: $color-claro;
+		display: none;
+		opacity: 0;
+		transition: opacity 2s;
+	}
+	
+	#trabajos__work2:target {
+		display: block;
+		opacity: .8;
+	}
+	
+	/* Los siguientes div no se muestran en pantalla, porque? */
+	.trabajos__work3 {
+		background: no-repeat center/100% url('../img/pancakes.png');
+		width: 100%;
+		background-size: contain;
+		padding: 27.1%;
+		position: relative;
+	}
+	
+	#trabajos__work3 {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to top, #88888800, #00000099);
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 8vh 0 0 8vw;
+		color: $color-claro;
+		display: none;
+		opacity: 0;
+		transition: opacity 2s;
+	}
+
+	#trabajos__work3:target {
+		display: block;
+		opacity: .8;
+	}
+
+	.trabajos__work4 {
+		background: no-repeat center/100% url('../img/chimeneas-atardecer.png');
+		width: 100%;
+		background-size: contain;
+		padding: 27.1%;
+		position: relative;
+	}
+
+	#trabajos__work4 {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to top, #88888800, #00000099);
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 8vh 0 0 8vw;
+		color: $color-claro;
+		display: none;
+		opacity: 0;
+		transition: opacity 2s;
+	}
+
+	#trabajos__work4:target {
+		display: block;
+		opacity: .8;
+	}
+}

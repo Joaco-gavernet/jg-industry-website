@@ -1,0 +1,51 @@
+// footer
+footer {
+	color: $color-claro;
+	background: #3d596dc4;
+	// background: #939792c4;
+	letter-spacing: 1.5px;
+	font-weight: 800;
+	z-index: 2;
+	grid-area: 2/2/3/3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	.footer__left {
+		font-size: .6rem;
+		margin-left: 3vw;
+	}
+	
+	.footer__right {
+		@include font(.7rem, none, uppercase);
+		margin-right: 3vw;
+		
+		&:hover {
+			animation-name: arrow-animation;
+			@keyframes arrow-animation {
+				0% {
+					word-spacing: 1;
+				}
+				50% {
+					word-spacing: 1.5rem;
+				}
+				100% {
+					word-spacing: 1;
+				}
+			}
+			animation-iteration-count: 2;
+			animation-timing-function: ease-in;
+			animation-duration: .5s;
+		}
+		
+	}
+}
+
+// footer fixed en trabajos.html y en amigueros.html
+.footerfixed {
+	width: 80%;
+	height: 8vh;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}

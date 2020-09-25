@@ -1,0 +1,204 @@
+// Archivo .scss para amigueros.html
+.amigueros__h2 {
+	color: $color-claro;
+	background: #8A9DBC;
+	// font-size: $h2-font;
+	// font-weight: 800;
+	// text-transform: uppercase;
+	@include font($h2-font, 800, uppercase);
+	letter-spacing: 6px;
+	width: 100%;
+	padding: 20px 0 20px 5vw;
+}
+
+.amigueros__amigo1 {
+	background: $color-cielo;
+	width: 100%;
+	height: 82vh;
+	display: flex;
+	justify-content: space-evenly;
+	order: 3;
+	
+	.amigo1__descripcion {
+		width: 30%;
+		// display: flex;
+		// flex-flow: wrap;
+		// align-content: center;
+		// justify-content: center;
+		@include flex(flex, wrap, center, center);
+		
+		.amigo1__descripcionH3 {
+			color: $color-claro;
+			// font-size: 2rem;
+			// font-weight: 800;
+			@include font(2rem, 800, none);
+			letter-spacing: .15rem;
+			text-align: center;
+			padding: 25px 0;
+
+			&:hover {
+				color: $color-oscuro;
+			}
+		}
+		
+		
+		.amigo1__descripcionP {
+			color: $color-claro;
+			// font-size: .9rem;
+			// font-weight: 500;
+			@include font(.9rem, 500, none);
+			letter-spacing: .1rem;
+			line-height: 1.6;
+			text-align: center;
+		}
+	}
+	
+	.amigo1__instagram {
+		width: 40%;
+		max-width: 500px;
+		height: auto;
+		align-self: center;
+		justify-self: center;
+		transition: transform 3s;
+		
+		&:hover {
+			transform: scale(1.05);
+		}
+		
+		.instagram__link {
+			width: 80%;
+			border-radius: 5%;
+		}
+	}
+}
+
+.amigueros__amigo2 {
+	background: #e4d9d9;
+	width: 100%;
+	height: 100vh;
+	// display: flex;
+	// flex-flow: wrap;
+	// justify-content: center;
+	// align-content: center;
+	@include flex (flex, wrap, center, center);
+	order: 2;
+	
+	.amigo2__descripcion {
+		display: flex;
+		flex-direction: column;
+		
+		.amigo2__descripcionH3 {
+			color: $color-oscuro;
+			// font-size: 2rem;
+			// font-weight: 800;
+			@include font(2rem, 800, none);
+			letter-spacing: .24rem;
+			padding: 0 0 20px 0;
+			margin: auto;
+		}
+		
+		.amigo2__descripcionP {
+			width: 80%;
+			// font-size: .9rem;
+			// font-weight: 500;
+			@include font(.9rem, 500, none);
+			letter-spacing: .1rem;
+			line-height: 1.6;
+			text-align: center;
+			margin: auto;
+		}
+		
+		.amigo2__descripcionH4 {
+			color: $color-oscuro;
+			// font-size: 1.2rem;
+			// font-weight: 700;
+			// text-transform: lowercase;
+			@include font(1.2rem, 700, lowercase);
+			letter-spacing: .20rem;
+			padding: 5px 0 40px 0;
+			margin: auto;
+		}
+	}
+	
+	.amigo2__multimedia {
+		width: 100%;
+		// display: flex;
+		// justify-content: center;
+		// align-content: center;
+		@include flex(flex, nowrap, center, center);
+		
+		.amigo2__multimediaArchivo {
+			width: 80%;
+			height: 50vh;
+		}
+	}
+}
+	
+.amigueros__amigo3 {
+	background: #8ab0bc;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-flow: wrap;
+	align-content: center;
+	order: 1;
+	
+	.amigo3__multimedia {
+		width: 100%;
+		padding-top: 8vh;
+		display: flex;
+		justify-content: space-evenly;
+		order: 2;
+		
+		.amigo3__multimediaContenedor {
+			display: inline-block;
+			width: 22%;
+			border-radius: 2%;
+			overflow: hidden;
+			
+			.amigo3__contenedorArchivo {
+				width: 100%;
+				transition: transform 2s;
+				
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+		
+	.amigo3__descripcion {
+		display: flex;
+		flex-direction: column;
+		color: $color-claro;
+		order: 1;
+		
+		.amigo3__descripcionH3 {
+			// font-size: 2rem;
+			// font-weight: 800;
+			@include font(2rem, 800, none);
+			letter-spacing: .24rem;
+			padding: 0 0 20px 0;
+			margin: auto;
+		
+			&:hover {
+				color: $color-oscuro;
+			}
+
+			.amigo3__descripcionH3Link {
+				@extend .amigo3__descripcionH3;
+			}
+		}
+		
+		.amigo3__descripcionP {
+			width: 80%;
+			margin: auto;
+			// font-size: .9rem;
+			// font-weight: 500;
+			@include font(.9rem, 500, none);
+			letter-spacing: .1rem;
+			line-height: 1.6;
+			text-align: center;
+		}
+	}
+}

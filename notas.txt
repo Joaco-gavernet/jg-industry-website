@@ -1,0 +1,23 @@
+Proyecto Final Para pasar a .scss
+Paleta de colores:
+	#C4C6C6 (Silver Sand)
+	#16171E (Raisin Black)
+	#914244 (Wine)
+	#3d596d (Color Montaña)
+
+Fuentes:
+	https://www.fontspace.com/montserrat-font-f16544
+
+Otras alternativas:
+	#061826 (Rich Black FOGRA 29)
+	#D0E1D4 (Honeydrew)
+	#F8F1F5 (Snow)
+	#B82843 (Bright Maroon)
+	#8A9DBC (Cool Grey)
+
+Paginas de referencia:
+	http://mammothmedia.tv/
+
+Codigo util:
+	&#8641; = flecha
+	&#8608; = flecha

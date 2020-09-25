@@ -1,0 +1,86 @@
+// nav 
+.nav {
+	// grid-area: 1/1/3/2;
+	// color: #C4C6C6;
+	color: $color-claro;
+	background: #16171Ec3;
+	min-width: 177px;
+	z-index: 3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	
+	.nav__link {
+		// grid-area: 1/1/2/2;
+		margin: auto;
+		
+		.nav__linkLogo {
+			background: #000000d4;
+			border-radius: 10%;
+			width: 120px;
+			transition: transform 1.5s;
+			
+			&:hover {
+				transform: scale(1.15);
+			}
+		}
+	}
+
+	.nav__menu {
+		text-align: right;
+		width: 70%;
+		margin: auto;
+		
+		.nav__menuLi {
+			// font-size: 1.1rem;
+			// font-weight: 600;
+			// text-transform: uppercase;
+			@include font(1.1rem, 600, uppercase);
+			text-decoration: none;
+			line-height: 1.8rem;
+			opacity: 1.0;
+			transition: margin 1s ease;
+			// transition: transform 2s ease;
+
+			&:hover {
+				margin: 0 10px 5px 0;
+				// transform: translate(-3px, -3px);
+			}
+		}
+	}
+
+	.nav__autor {
+		// grid-area: 3/1/4/2;
+		margin: auto;
+		transform: translate(-1.1rem, 2rem);
+		color: $color-claro;
+		text-align: center;
+		
+		.nav__autorIndustry {
+			// font-size: .7rem;
+			// text-transform: uppercase;
+			@include font(.7rem, none, uppercase);
+			opacity: 0;
+			transition: opacity 2s ease-in-out;
+		}
+		
+		&:hover .nav__autorIndustry {
+			opacity: .5;
+		}
+		
+		.nav__autorFirma {
+			opacity: .8;
+			width: 120px;
+		}
+	}
+
+	#nav__menumobile {
+		// display: none;
+		width: 8vh;
+		height: auto;
+	}
+}
