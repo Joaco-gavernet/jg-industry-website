@@ -36,19 +36,14 @@
 		margin: auto;
 		
 		.nav__menuLi {
-			// font-size: 1.1rem;
-			// font-weight: 600;
-			// text-transform: uppercase;
 			@include font(1.1rem, 600, uppercase);
 			text-decoration: none;
 			line-height: 1.8rem;
 			opacity: 1.0;
 			transition: margin 1s ease;
-			// transition: transform 2s ease;
 
 			&:hover {
 				margin: 0 10px 5px 0;
-				// transform: translate(-3px, -3px);
 			}
 		}
 	}
@@ -61,8 +56,6 @@
 		text-align: center;
 		
 		.nav__autorIndustry {
-			// font-size: .7rem;
-			// text-transform: uppercase;
 			@include font(.7rem, none, uppercase);
 			opacity: 0;
 			transition: opacity 2s ease-in-out;
@@ -78,9 +71,61 @@
 		}
 	}
 
-	#nav__menumobile {
+	.menumobile__hamburguesa {
 		display: none;
-		width: 8vh;
+		width: 60px;
 		height: auto;
+	}
+
+	#menumobile__desplegable {
+		// display: none;
+		position: fixed;
+		top: 0;
+		right: -100vw;
+		width: 100%;
+		height: 100vh;
+		transition: right 0.5s, background ease-in 1s;
+		
+		.desplegable__close {
+			width: 50px;
+			position: absolute;
+			top: 2vh;
+			right: 5vw;
+			z-index: 1;
+		}
+
+		.desplegable__links {
+			margin: 0 0 0 40vw;
+			background: $color-gris-oscuro;
+			height: 100vh;
+			width: 50vw;
+			position: absolute;
+			right: -50vw;
+			top: 0;
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			transition: right 1s;
+
+			.links__li {
+				@include font(1.3rem, 600, uppercase);
+				margin: 0 5vw 15px 0;
+				text-decoration: none;
+				line-height: 1.8rem;
+				opacity: 1.0;
+				text-align: right;
+				transition: margin 1.5s ease;
+			}
+		}
+
+		&:target {
+			display: block;
+			right: 0;
+			background: $color-ddl;
+
+			.desplegable__links {
+				right: 0;
+			}
+		}
 	}
 }
