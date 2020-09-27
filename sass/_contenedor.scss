@@ -5,3 +5,14 @@
 	display: flex;
 	flex-flow: wrap;
 }
+
+// contenedor scrolleable usado en trabajos.html y en amigueros.html
+.cs {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80%;
+	margin-bottom: 8vh;
+	display: flex;
+	flex-flow: wrap;
+}

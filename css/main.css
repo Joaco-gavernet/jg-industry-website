@@ -95,6 +95,7 @@ body {
   width: 120px;
 }
 .nav #nav__menumobile {
+  display: none;
   width: 8vh;
   height: auto;
 }
@@ -102,6 +103,16 @@ body {
 .contenedor {
   grid-area: 1/2/2/3;
   position: relative;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.cs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  margin-bottom: 8vh;
   display: flex;
   flex-flow: wrap;
 }
@@ -151,16 +162,6 @@ footer .footer__right:hover {
   position: fixed;
   bottom: 0;
   right: 0;
-}
-
-.cs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80%;
-  margin-bottom: 8vh;
-  display: flex;
-  flex-flow: wrap;
 }
 
 .inicio__titulo {
@@ -337,7 +338,7 @@ footer .footer__right:hover {
   transform: scale(1.1);
 }
 .trabajos__workLink .trabajos__work1 {
-  background: no-repeat center/100% url("../img/gabiota-horizontal.png");
+  background: no-repeat center/100% url("../img/gabiota-horizontal.jpg");
   width: 100%;
   background-size: contain;
   padding: 27.1%;
@@ -361,7 +362,7 @@ footer .footer__right:hover {
   opacity: 0.8;
 }
 .trabajos__workLink .trabajos__work2 {
-  background: no-repeat center/100% url("../img/perro-paisaje-horizontal.png");
+  background: no-repeat center/100% url("../img/perro-paisaje-horizontal.jpg");
   width: 100%;
   background-size: contain;
   padding: 27.1%;
@@ -385,7 +386,7 @@ footer .footer__right:hover {
   opacity: 0.8;
 }
 .trabajos__workLink .trabajos__work3 {
-  background: no-repeat center/100% url("../img/pancakes.png");
+  background: no-repeat center/100% url("../img/pancakes.jpg");
   width: 100%;
   background-size: contain;
   padding: 27.1%;
@@ -409,7 +410,7 @@ footer .footer__right:hover {
   opacity: 0.8;
 }
 .trabajos__workLink .trabajos__work4 {
-  background: no-repeat center/100% url("../img/chimeneas-atardecer.png");
+  background: no-repeat center/100% url("../img/chimeneas.jpg");
   width: 100%;
   background-size: contain;
   padding: 27.1%;
