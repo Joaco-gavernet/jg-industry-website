@@ -22,6 +22,7 @@
 			background: #000000d4;
 			border-radius: 10%;
 			width: 120px;
+			padding: 30px;
 			transition: transform 1.5s;
 			
 			&:hover {
@@ -121,7 +122,8 @@
 		&:target {
 			display: block;
 			right: 0;
-			background: $color-ddl;
+			// background: $color-ddl;
+			background: linear-gradient(90deg, #92989222, $color-ddl);
 
 			.desplegable__links {
 				right: 0;

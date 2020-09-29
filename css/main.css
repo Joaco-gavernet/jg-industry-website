@@ -52,6 +52,7 @@ body {
   background: #000000d4;
   border-radius: 10%;
   width: 120px;
+  padding: 30px;
   transition: transform 1.5s;
 }
 .nav .nav__link .nav__linkLogo:hover {
@@ -141,7 +142,7 @@ body {
 .nav #menumobile__desplegable:target {
   display: block;
   right: 0;
-  background: #939792c4;
+  background: linear-gradient(90deg, #92989222, #939792c4);
 }
 .nav #menumobile__desplegable:target .desplegable__links {
   right: 0;
@@ -836,6 +837,7 @@ footer .footer__right:hover {
     width: 75px;
   }
   .nav .nav__link .nav__linkLogo {
+    padding: 15px;
     width: inherit;
   }
   .nav .nav__menu {
