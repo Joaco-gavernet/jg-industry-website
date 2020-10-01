@@ -60,6 +60,7 @@
 	.footerfixed {
 		height: 12vh;
 		width: 100%;
+		grid-area: 3/1/4/2;
 	}
 
 	.inicio__titulo {
@@ -71,8 +72,48 @@
 		}
 	}
 
+	// yo-yo
+	.soltate {
+		width: 100%;
+		padding: 5vh 0 12vh 0;
+		order: 1;
+
+		.soltate__h2 {
+			font-size: $h2-font-mobile;
+		}
+	}
+
+	.virtudesydefectos {
+		width: 100%;
+		padding: 3vh 0 10vh 0;
+
+		.virtudesydefectos__h2 {
+			font-size: $h2-font-mobile;
+		}
+	}
+
+	
+	// amigueros
 	.amigueros__h2 {
-		font-size: 1.8rem;
+		font-size: $h2-font-mobile;
+	}
+
+	.amigueros__amigo1 {
+		flex-flow: column;
+		align-items: center;
+
+		.amigo1__descripcion {
+			width: 90%;
+		}
+
+		.amigo1__instagram {
+			width: 100%;
+			margin-top: 10vh;
+
+			.instagram__link {
+				width: 80%;
+			}
+		}
 	}
 
 	.amigueros__amigo3 {
@@ -89,11 +130,24 @@
 			.amigo3__multimediaContenedor--mobile {
 				width: 95%;
 				height: auto;
-				
-				.amigo3__contenedorArchivo--mobile {
-					width: inherit;
-				}
 			}
 		}
 	}
+	
+	.redes {
+		width: 100%;
+		padding: 5vh 0 5vh 0;
+	}
+
+	.formulario {
+		width: 100%;
+		padding: 5vh 0 5vh 0;
+	}
+
+	.contactame {
+		width: 100%;
+		padding: 5vh 0 5vh 0;
+		order: 2;
+	}
+
 }

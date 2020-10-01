@@ -1,7 +1,6 @@
 // Archivo yo-yo.html
 .soltate {
 	width: 40%;
-	height: 100%;
 	display: inline-block;
 	background: $color-cielo;
 	color: $color-claro;
@@ -21,7 +20,7 @@
 	}
 	
 	.soltate__p {
-		@include font(.9rem, 500, none);
+		@include font($regular-font, 500, none);
 		letter-spacing: .1rem;
 		width: 80%;
 		margin: auto;
@@ -30,8 +29,7 @@
 	}
 
 	.soltate__bold {
-		@include font(.9rem, 800, none);
-		// color: $color-oscuro;
+		@include font($regular-font, 800, none);
 	}
 	
 	.soltate__h3 {
@@ -94,13 +92,13 @@
 		}
 		
 		.yoyo__descripcion {
-			@include font(.9rem, 500, none);
+			@include font($regular-font, 500, none);
 			letter-spacing: .1rem;
 			margin-right: 3vw;
 		}
 		
 		.yoyo__bold {
-			@include font(.9rem, 800, none);
+			@include font($regular-font, 800, none);
 		}
 	}
 }

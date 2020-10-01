@@ -11,7 +11,6 @@
 .amigueros__amigo1 {
 	background: $color-cielo;
 	width: 100%;
-	// height: 82vh;
 	padding: 15vh 0 15vh 0;
 	display: flex;
 	justify-content: space-evenly;
@@ -36,7 +35,7 @@
 		
 		.amigo1__descripcionP {
 			color: $color-claro;
-			@include font(.9rem, 500, none);
+			@include font($regular-font, 500, none);
 			letter-spacing: .1rem;
 			line-height: 1.6;
 			text-align: center;
@@ -75,8 +74,6 @@
 		
 		.amigo2__descripcionH3 {
 			color: $color-oscuro;
-			// font-size: 2rem;
-			// font-weight: 800;
 			@include font(2rem, 800, none);
 			letter-spacing: .24rem;
 			padding: 0 0 20px 0;
@@ -85,9 +82,7 @@
 		
 		.amigo2__descripcionP {
 			width: 80%;
-			// font-size: .9rem;
-			// font-weight: 500;
-			@include font(.9rem, 500, none);
+			@include font($regular-font, 500, none);
 			letter-spacing: .1rem;
 			line-height: 1.6;
 			text-align: center;
@@ -185,7 +180,7 @@
 		.amigo3__descripcionP {
 			width: 80%;
 			margin: auto;
-			@include font(.9rem, 500, none);
+			@include font($regular-font, 500, none);
 			letter-spacing: .1rem;
 			line-height: 1.6;
 			text-align: center;
