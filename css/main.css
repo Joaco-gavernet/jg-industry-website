@@ -20,7 +20,7 @@ ul {
 }
 
 body {
-  background: url("../img/P1200306.JPG") no-repeat center fixed;
+  background: url("../img/paisaje-bariloche-favorito.jpg") no-repeat center fixed;
   background-size: cover;
   position: relative;
   /* background-position: center bottom; */
@@ -496,7 +496,7 @@ footer .footer__right:hover {
 .amigueros__amigo1 {
   background: #8A9DBC;
   width: 100%;
-  height: 82vh;
+  padding: 15vh 0 15vh 0;
   display: flex;
   justify-content: space-evenly;
   order: 3;
@@ -548,7 +548,7 @@ footer .footer__right:hover {
 .amigueros__amigo2 {
   background: #e4d9d9;
   width: 100%;
-  height: 100vh;
+  padding: 20vh 0 20vh 0;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -602,7 +602,7 @@ footer .footer__right:hover {
 .amigueros__amigo3 {
   background: #8ab0bc;
   width: 100%;
-  height: 100vh;
+  padding: 15vh 0 20vh 0;
   display: flex;
   flex-flow: wrap;
   align-content: center;
@@ -613,7 +613,6 @@ footer .footer__right:hover {
   padding-top: 8vh;
   display: flex;
   justify-content: space-evenly;
-  order: 2;
 }
 .amigueros__amigo3 .amigo3__multimedia .amigo3__multimediaContenedor {
   display: inline-block;
@@ -645,7 +644,6 @@ footer .footer__right:hover {
   display: flex;
   flex-direction: column;
   color: #fffdf8;
-  order: 1;
 }
 .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionH3, .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionH3 .amigo3__descripcionH3Link {
   font-size: 2rem;
@@ -879,6 +877,10 @@ footer .footer__right:hover {
   .inicio__titulo .inicio__tituloH1 {
     font-size: 14vw;
     letter-spacing: 1vw;
+  }
+
+  .amigueros__h2 {
+    font-size: 1.8rem;
   }
 
   .amigueros__amigo3 {
