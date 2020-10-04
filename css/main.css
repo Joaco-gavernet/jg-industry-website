@@ -34,7 +34,6 @@ body {
 .nav {
   color: #fffdf8;
   background: #16171Ec3;
-  min-width: 177px;
   z-index: 3;
   position: fixed;
   top: 0;
@@ -667,7 +666,6 @@ footer .footer__right:hover {
 
 .contactame {
   width: 31%;
-  min-width: 220px;
   background: #8ab0bc;
   color: #fffdf8;
   display: flex;
@@ -681,28 +679,25 @@ footer .footer__right:hover {
   text-transform: uppercase;
   letter-spacing: 0.08rem;
   margin: 0 0 5vh 0;
-  /* letter-spacing: -.6rem; */
-  /* text-orientation: upright; */
 }
 .contactame .contactame__ul {
   width: 60%;
   font-size: 1rem;
   font-weight: 800;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.07rem;
   margin: 0 30px 0 10px;
 }
 .contactame .contactame__ul h3 {
   font-size: 1rem;
   font-weight: 800;
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 0.07rem;
   margin-top: 0.6rem 0 0.2rem 0;
 }
 
 .formulario {
   width: 40%;
-  min-width: 289px;
   background: #e4d9d9;
   display: flex;
   flex-flow: wrap;
@@ -789,18 +784,16 @@ footer .footer__right:hover {
   align-items: center;
 }
 .redes .redes__h2 {
-  display: none;
+  display: inline-block;
   font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
   order: 1;
   writing-mode: vertical-rl;
 }
-.redes:hover .redes__h2 {
-  display: inline-block;
-}
 .redes .redes__ul {
   width: 50%;
+  min-width: 200px;
 }
 .redes .redes__ul .redes__ulImg {
   width: 100%;
@@ -929,6 +922,22 @@ footer .footer__right:hover {
   .redes {
     width: 100%;
     padding: 5vh 0 5vh 0;
+    flex-flow: column;
+  }
+  .redes .redes__h2 {
+    display: block;
+    writing-mode: horizontal-tb;
+    order: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .redes .redes__ul {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
   }
 
   .formulario {

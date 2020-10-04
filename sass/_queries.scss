@@ -136,18 +136,35 @@
 	
 	.redes {
 		width: 100%;
-		padding: 5vh 0 5vh 0;
+		padding: 5vh 0;
+		flex-flow: column;
+
+		.redes__h2 {
+			display: block;
+			writing-mode: horizontal-tb;
+			order: 0;
+			@include font(2.5rem, 800, uppercase)
+			padding: 2.5rem;
+		}
+
+		.redes__ul {
+			width: 100%;
+			@include flex(flex, wrap, center, center)
+		}
 	}
 
 	.formulario {
 		width: 100%;
-		padding: 5vh 0 5vh 0;
+		padding: 5vh 0;
 	}
 
 	.contactame {
 		width: 100%;
-		padding: 5vh 0 5vh 0;
+		padding: 30vh 0;
 		order: 2;
-	}
 
+		.contactame__h2 {
+			width: 100%;
+		}
+	}
 }

@@ -1,41 +1,25 @@
 // Archivo. scss para contacta.html
 .contactame {
 	width: 31%;
-	min-width: 220px;
-	// height: 100%;
 	background: #8ab0bc;
 	color: $color-claro;
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: center;
-	// align-items: center;
 	@include flex(flex, wrap, center, center);
 	
 	.contactame__h2 {
-		// font-size: 2.5vw;
-		// font-weight: 800;
-		// text-transform: uppercase;
 		@include font(2.5vw, 800, uppercase);
 		letter-spacing: .08rem;
 		margin: 0 0 5vh 0;
-		// writing-mode: vertical-rl;
-		// order: 2;
-		/* letter-spacing: -.6rem; */
-		/* text-orientation: upright; */
+		width: 100%;
 	}
 	
 	.contactame__ul {
 		width: 60%;
-		// font-size: 1.2rem;
-		// font-weight: 700;
-		@include font(1rem, 800, uppercase);
+		@include font(1rem, 800, none);
 		letter-spacing: .07rem;
 		margin: 0 30px 0 10px;
 		
 		& h3 {
-			// font-size: 1rem;
-			// font-weight: 700;
-			@include font(1rem, 800, lowercase);
+			@include font(1rem, 800, uppercase);
 			letter-spacing: .07rem;
 			margin-top: .6rem 0 .2rem 0;
 		}
@@ -44,26 +28,16 @@
 
 .formulario {
 	width: 40%;
-	min-width: 289px;
 	background: #e4d9d9;
-	// display: flex;
-	// justify-content: center;
-	// align-content: center;
-	// flex-flow: wrap;
 	@include flex(flex, wrap, center, center);
 	
 	.formulario__h2 {
-		// font-size: 2.5rem;
-		// font-weight: 900;
-		// text-transform: uppercase;
 		@include font(2.5rem, 800, uppercase);
 		letter-spacing: .18;
 		padding: 1.5rem;
 	}
 	
 	.formulario__p {
-		// font-size: .9rem;
-		// font-weight: 600;
 		@include font(.9rem, 600, none);
 		letter-spacing: .1rem;
 		padding: 0 0 1rem 0;
@@ -71,9 +45,6 @@
 	}
 	
 	.formulario__h3 {
-		// font-size: .9rem;
-		// font-weight: 800;
-		// text-transform: uppercase;
 		@include font(.9rem, 800, uppercase);
 		letter-spacing: .1rem;
 		padding: 0 0 .5rem 0;
@@ -94,10 +65,6 @@
 		}
 		
 		.form__instagram {
-			// width: 100%;
-			// padding: 5px;
-			// margin: 2%;
-			// font-size: 1rem;
 			@extend .form__nombre;
 		}
 		
@@ -110,27 +77,14 @@
 		}
 		
 		.form__sexo {
-			// width: 46%;
-			// padding: 5px;
-			// margin: 2%;
-			// font-size: 1rem;
-			// color: #777;
 			@extend .form__edad;
 		}
 		
 		.form__email {
-			// width: 100%;
-			// padding: 5px;
-			// margin: 2%;
-			// font-size: 1rem;
 			@extend .form__nombre;
 		}
 		
 		.form__telefono {
-			// width: 100%;
-			// padding: 5px;
-			// margin: 2%;
-			// font-size: 1rem;
 			@extend .form__nombre;
 		}
 		
@@ -170,29 +124,19 @@
 	width: 28.98%;
 	height: 100%;
 	background: $color-cielo;
-	// display: flex;
-	// flex-flow: wrap;
-	// justify-content: center;
-	// align-items: center;
 	@include flex(flex, wrap, center, center);
 	align-items: center;
 	
 	.redes__h2 {
-		display: none;
-		// font-size: 2rem;
-		// font-weight: 800;
-		// text-transform: uppercase;
+		display: inline-block;
 		@include font(2rem, 800, uppercase);
 		order: 1;
 		writing-mode: vertical-rl;
 	}
-	
-	&:hover .redes__h2 {
-		display: inline-block;
-	}
 
 	.redes__ul {
 		width: 50%;
+		min-width: 200px;
 		
 		.redes__ulImg {
 			width: 100%;
