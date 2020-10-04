@@ -123,7 +123,7 @@
 	width: 28.98%;
 	height: 100%;
 	background: $color-cielo;
-	@include flex(flex, wrap, center, center);
+	@include flex(flex, nowrap, center, center);
 	align-items: center;
 	
 	.redes__h2 {

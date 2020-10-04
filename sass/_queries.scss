@@ -174,8 +174,28 @@
 	}
 }
 
-@media (min-width: 769px) and (max-width: 1024px;) {
-	.redes .redes__h2 {
+@media (min-width: 769px) and (max-width: 1024px) {
+	.virtudesydefectos .virtudesydefectos__panoramica {
+		display: none;
+	}
+
+	.formulario {
+		width: 60%;
+
+		.formulario__h3 {
+			display: none;
+		}
+	}
+
+	.redes {
+		width: 40%;
+
+		.redes__h2 {
+			display: none;
+		}
+	}
+
+	.contactame {
 		display: none;
 	}
 }

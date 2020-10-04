@@ -295,9 +295,11 @@ footer .footer__right:hover {
 
 .virtudesydefectos {
   width: 59.98%;
-  height: 100%;
   background: #e4d9d9;
-  display: inline-block;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center;
 }
 .virtudesydefectos .virtudesydefectos__h2 {
   font-size: 2.8rem;
@@ -329,26 +331,29 @@ footer .footer__right:hover {
 .virtudesydefectos .yoyo__contenedor {
   width: 90%;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .virtudesydefectos .yoyo__contenedor .yoyo__virtud {
   font-size: 1.5rem;
   font-weight: 800;
   text-transform: none;
   letter-spacing: 0.15rem;
-  margin: 0 0 0.2vw 3vw;
+  margin: 0 0 0.1vw 3vw;
 }
 .virtudesydefectos .yoyo__contenedor .yoyo__descripcion {
   font-size: 1rem;
   font-weight: 500;
   text-transform: none;
   letter-spacing: 0.1rem;
-  margin-right: 3vw;
 }
 .virtudesydefectos .yoyo__contenedor .yoyo__bold {
   font-size: 1rem;
   font-weight: 800;
   text-transform: none;
+}
+.virtudesydefectos .virtudesydefectos__panoramica {
+  width: 80%;
+  margin: 0 5% 0 5%;
 }
 
 .trabajos__h2 {
@@ -516,6 +521,21 @@ footer .footer__right:hover {
 }
 .amigueros__amigo1 .amigo1__descripcion .amigo1__descripcionH3:hover {
   color: #161215;
+  animation-name: arrow-animation;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+@keyframes arrow-animation {
+  0% {
+    word-spacing: 1;
+  }
+  50% {
+    word-spacing: 1.5rem;
+  }
+  100% {
+    word-spacing: 1;
+  }
 }
 .amigueros__amigo1 .amigo1__descripcion .amigo1__descripcionP {
   color: #fffdf8;
@@ -565,6 +585,23 @@ footer .footer__right:hover {
   padding: 0 0 20px 0;
   margin: auto;
 }
+.amigueros__amigo2 .amigo2__descripcion .amigo2__descripcionH3:hover {
+  animation-name: arrow-animation;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+@keyframes arrow-animation {
+  0% {
+    word-spacing: 1;
+  }
+  50% {
+    word-spacing: 1.5rem;
+  }
+  100% {
+    word-spacing: 1;
+  }
+}
 .amigueros__amigo2 .amigo2__descripcion .amigo2__descripcionP {
   width: 80%;
   font-size: 1rem;
@@ -591,9 +628,9 @@ footer .footer__right:hover {
   justify-content: center;
   align-content: center;
 }
-.amigueros__amigo2 .amigo2__multimedia .amigo2__multimediaArchivo {
+.amigueros__amigo2 .amigo2__multimedia .multimedia__video {
   width: 80%;
-  height: 50vh;
+  height: 75vh;
 }
 
 .amigueros__amigo3 {
@@ -652,6 +689,23 @@ footer .footer__right:hover {
 }
 .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionH3:hover, .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionH3 .amigo3__descripcionH3Link:hover {
   color: #161215;
+}
+.amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionH3 .amigo3__descripcionH3Link:hover {
+  animation-name: arrow-animation;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+@keyframes arrow-animation {
+  0% {
+    word-spacing: 1;
+  }
+  50% {
+    word-spacing: 1.5rem;
+  }
+  100% {
+    word-spacing: 1;
+  }
 }
 .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionP {
   width: 80%;
@@ -778,7 +832,7 @@ footer .footer__right:hover {
   height: 100%;
   background: #8A9DBC;
   display: flex;
-  flex-flow: wrap;
+  flex-flow: nowrap;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -957,5 +1011,28 @@ footer .footer__right:hover {
   .contactame .contactame__ul {
     width: 50%;
     margin: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .virtudesydefectos .virtudesydefectos__panoramica {
+    display: none;
+  }
+
+  .formulario {
+    width: 60%;
+  }
+  .formulario .formulario__h3 {
+    display: none;
+  }
+
+  .redes {
+    width: 40%;
+  }
+  .redes .redes__h2 {
+    display: none;
+  }
+
+  .contactame {
+    display: none;
   }
 }

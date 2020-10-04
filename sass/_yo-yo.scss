@@ -44,10 +44,9 @@
 
 .virtudesydefectos {
 	width: 59.98%;
-	height: 100%;
 	background: $color-salmon;
 	// background: $color-claro;
-	display: inline-block;
+	@include flex(flex, wrap, center, center);
 	
 	.virtudesydefectos__h2 {
 		@include font(2.8rem, 800, uppercase);
@@ -59,6 +58,8 @@
 	
 	#virtudes {
 		display: none;
+		// height: 70vh;
+
 		&:target {
 			display: block;
 			
@@ -83,22 +84,26 @@
 	.yoyo__contenedor {
 		width: 90%;
 		margin: auto;
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 		
 		.yoyo__virtud {
 			@include font(1.5rem, 800, none);
 			letter-spacing: .15rem;
-			margin: 0 0 0.2vw 3vw;
+			margin: 0 0 .1vw 3vw;
 		}
 		
 		.yoyo__descripcion {
 			@include font($regular-font, 500, none);
 			letter-spacing: .1rem;
-			margin-right: 3vw;
 		}
 		
 		.yoyo__bold {
 			@include font($regular-font, 800, none);
 		}
+	}
+
+	.virtudesydefectos__panoramica {
+		width: 80%;
+		margin: 0 5% 0 5%;
 	}
 }
