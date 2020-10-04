@@ -143,13 +143,13 @@
 			display: block;
 			writing-mode: horizontal-tb;
 			order: 0;
-			@include font(2.5rem, 800, uppercase)
+			@include font(2.5rem, 800, uppercase);
 			padding: 2.5rem;
 		}
 
 		.redes__ul {
 			width: 100%;
-			@include flex(flex, wrap, center, center)
+			@include flex(flex, wrap, center, center);
 		}
 	}
 
@@ -160,11 +160,22 @@
 
 	.contactame {
 		width: 100%;
-		padding: 30vh 0;
+		padding: 10vh 0;
 		order: 2;
 
 		.contactame__h2 {
-			width: 100%;
+			font-size: 2.5rem;
 		}
+
+		.contactame__ul {
+			width: 50%;
+			margin: none;
+		}
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px;) {
+	.redes .redes__h2 {
+		display: none;
 	}
 }

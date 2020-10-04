@@ -691,7 +691,7 @@ footer .footer__right:hover {
 .contactame .contactame__ul h3 {
   font-size: 1rem;
   font-weight: 800;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.07rem;
   margin-top: 0.6rem 0 0.2rem 0;
 }
@@ -921,7 +921,7 @@ footer .footer__right:hover {
 
   .redes {
     width: 100%;
-    padding: 5vh 0 5vh 0;
+    padding: 5vh 0;
     flex-flow: column;
   }
   .redes .redes__h2 {
@@ -931,6 +931,7 @@ footer .footer__right:hover {
     font-size: 2.5rem;
     font-weight: 800;
     text-transform: uppercase;
+    padding: 2.5rem;
   }
   .redes .redes__ul {
     width: 100%;
@@ -942,12 +943,19 @@ footer .footer__right:hover {
 
   .formulario {
     width: 100%;
-    padding: 5vh 0 5vh 0;
+    padding: 5vh 0;
   }
 
   .contactame {
     width: 100%;
-    padding: 5vh 0 5vh 0;
+    padding: 10vh 0;
     order: 2;
+  }
+  .contactame .contactame__h2 {
+    font-size: 2.5rem;
+  }
+  .contactame .contactame__ul {
+    width: 50%;
+    margin: none;
   }
 }
