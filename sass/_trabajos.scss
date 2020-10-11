@@ -2,9 +2,6 @@
 .trabajos__h2 {
 	color: $color-oscuro;
 	background: #e4d9d9;
-	// font-size: $h2-font;
-	// font-weight: 800;
-	// text-transform: uppercase;
 	@include font($h2-font, 800, uppercase);
 	letter-spacing: 6px;
 	width: 100%;
@@ -86,8 +83,7 @@
 		display: block;
 		opacity: .8;
 	}
-	
-	/* Los siguientes div no se muestran en pantalla, porque? */
+
 	.trabajos__work3 {
 		background: no-repeat center/100% url('../img/pancakes.jpg');
 		width: 100%;

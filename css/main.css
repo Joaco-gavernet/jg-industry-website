@@ -247,14 +247,13 @@ footer .footer__right:hover {
   background: #8A9DBC;
   color: #fffdf8;
 }
-.soltate .soltate__h2 {
+.soltate .soltate__h2, .soltate .sobremi .sobremi__h2, .sobremi .soltate .sobremi__h2 {
   font-size: 2.8rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.18;
   padding: 20px 0 20px 1vw;
-  display: inline-block;
-  width: 100%;
+  display: block;
   text-align: center;
 }
 .soltate .soltate__imagen {
@@ -287,69 +286,9 @@ footer .footer__right:hover {
   padding-top: 2vh;
 }
 
-.virtudesydefectos {
-  width: 59.98%;
-  background: #e4d9d9;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  align-content: center;
+.sobremi {
+  width: 60%;
 }
-.virtudesydefectos .virtudesydefectos__h2 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.18;
-  padding: 20px 0 20px 1vw;
-  text-align: center;
-  transition: color 2s;
-}
-.virtudesydefectos #virtudes {
-  display: none;
-}
-.virtudesydefectos #virtudes:target {
-  display: block;
-}
-.virtudesydefectos #virtudes:target #defectos {
-  display: none;
-}
-.virtudesydefectos #defectos {
-  display: none;
-}
-.virtudesydefectos #defectos:target {
-  display: block;
-}
-.virtudesydefectos #defectos:target #virtudes {
-  display: none;
-}
-.virtudesydefectos .yoyo__contenedor {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 15px;
-}
-.virtudesydefectos .yoyo__contenedor .yoyo__virtud {
-  font-size: 1.5rem;
-  font-weight: 800;
-  text-transform: none;
-  letter-spacing: 0.15rem;
-  margin: 0 0 0.1vw 3vw;
-}
-.virtudesydefectos .yoyo__contenedor .yoyo__descripcion {
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: none;
-  letter-spacing: 0.1rem;
-}
-.virtudesydefectos .yoyo__contenedor .yoyo__bold {
-  font-size: 1rem;
-  font-weight: 800;
-  text-transform: none;
-}
-.virtudesydefectos .virtudesydefectos__panoramica {
-  width: 80%;
-  margin: 0 5% 0 5%;
-}
-
 .trabajos__h2 {
   color: #161215;
   background: #e4d9d9;
@@ -364,7 +303,6 @@ footer .footer__right:hover {
 .trabajos__workLink {
   width: 100%;
   overflow: hidden;
-  /* Los siguientes div no se muestran en pantalla, porque? */
 }
 .trabajos__workLink .work__contenidoP {
   padding-top: 10px;
@@ -926,7 +864,7 @@ footer .footer__right:hover {
     padding: 5vh 0 12vh 0;
     order: 1;
   }
-  .soltate .soltate__h2 {
+  .soltate .soltate__h2, .soltate .sobremi .sobremi__h2, .sobremi .soltate .sobremi__h2 {
     font-size: 1.9rem;
   }
 

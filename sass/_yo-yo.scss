@@ -9,8 +9,7 @@
 		@include font($h2-font, 800, uppercase);
 		letter-spacing: .18;
 		padding: 20px 0 20px 1vw;
-		display: inline-block;
-		width: 100%;
+		display: block;
 		text-align: center;
 	}
 	
@@ -42,68 +41,10 @@
 	}
 }
 
-.virtudesydefectos {
-	width: 59.98%;
-	background: $color-salmon;
-	// background: $color-claro;
-	@include flex(flex, wrap, center, center);
-	
-	.virtudesydefectos__h2 {
-		@include font(2.8rem, 800, uppercase);
-		letter-spacing: .18;
-		padding: 20px 0 20px 1vw;
-		text-align: center;
-		transition: color 2s;
-	}
-	
-	#virtudes {
-		display: none;
-		// height: 70vh;
+.sobremi {
+	width: 60%;
 
-		&:target {
-			display: block;
-			
-			& #defectos {
-				display: none;
-			}
-		}
-	}
-	
-	#defectos {
-		display: none;
-		
-		&:target {
-			display: block;
-	
-			& #virtudes {
-				display: none;
-			}
-		}
-	}
-	
-	.yoyo__contenedor {
-		width: 90%;
-		margin: auto;
-		margin-bottom: 15px;
-		
-		.yoyo__virtud {
-			@include font(1.5rem, 800, none);
-			letter-spacing: .15rem;
-			margin: 0 0 .1vw 3vw;
-		}
-		
-		.yoyo__descripcion {
-			@include font($regular-font, 500, none);
-			letter-spacing: .1rem;
-		}
-		
-		.yoyo__bold {
-			@include font($regular-font, 800, none);
-		}
-	}
-
-	.virtudesydefectos__panoramica {
-		width: 80%;
-		margin: 0 5% 0 5%;
+	.sobremi__h2 {
+		@extend .soltate__h2;
 	}
 }
