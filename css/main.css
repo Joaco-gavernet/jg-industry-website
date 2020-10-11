@@ -247,12 +247,12 @@ footer .footer__right:hover {
   background: #8A9DBC;
   color: #fffdf8;
 }
-.soltate .soltate__h2, .soltate .sobremi .sobremi__h2, .sobremi .soltate .sobremi__h2 {
+.soltate .soltate__h2 {
   font-size: 2.8rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.18;
-  padding: 20px 0 20px 1vw;
+  padding: 20px 0;
   display: block;
   text-align: center;
 }
@@ -288,6 +288,32 @@ footer .footer__right:hover {
 
 .sobremi {
   width: 60%;
+  display: inline-block;
+  background: #e4d9d9;
+  color: #161215;
+}
+.sobremi .sobremi__h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.18;
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+.sobremi .sobremi__p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.1rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.sobremi .sobremi__retrato {
+  width: 80%;
+  margin: 5vh auto;
+  overflow: hidden;
 }
 .trabajos__h2 {
   color: #161215;
@@ -864,21 +890,17 @@ footer .footer__right:hover {
     padding: 5vh 0 12vh 0;
     order: 1;
   }
-  .soltate .soltate__h2, .soltate .sobremi .sobremi__h2, .sobremi .soltate .sobremi__h2 {
+  .soltate .soltate__h2 {
     font-size: 1.9rem;
   }
 
-  .virtudesydefectos {
+  .sobremi {
     width: 100%;
     padding: 3vh 0 10vh 0;
   }
-  .virtudesydefectos .virtudesydefectos__h2 {
+  .sobremi .sobremi__h2 {
     font-size: 1.9rem;
   }
-  .virtudesydefectos .virtudesydefectos__panoramica {
-    width: 90%;
-  }
-
   .amigueros__h2 {
     font-size: 1.9rem;
   }

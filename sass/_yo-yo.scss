@@ -8,7 +8,7 @@
 	.soltate__h2 {
 		@include font($h2-font, 800, uppercase);
 		letter-spacing: .18;
-		padding: 20px 0 20px 1vw;
+		padding: 20px 0;
 		display: block;
 		text-align: center;
 	}
@@ -43,8 +43,34 @@
 
 .sobremi {
 	width: 60%;
+	display: inline-block;
+	background: $color-salmon;
+	color: $color-oscuro;
 
 	.sobremi__h2 {
-		@extend .soltate__h2;
+		@include font($h2-font, 800, uppercase);
+		letter-spacing: .18;
+		padding: 20px 0;
+		display: block;
+		text-align: center;
+	}
+
+	.sobremi__p {
+		@include font($regular-font, 500, none);
+		letter-spacing: .1rem;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.sobremi__retrato {
+		width: 80%;
+		margin: 5vh auto;
+		overflow: hidden;
+		// display: none;
+
+		.sobremi__retratoArchivo {
+
+		}
 	}
 }
