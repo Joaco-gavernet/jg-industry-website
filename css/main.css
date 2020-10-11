@@ -301,7 +301,7 @@ footer .footer__right:hover {
   display: block;
   text-align: center;
 }
-.sobremi .sobremi__p {
+.sobremi .sobremi__ul {
   font-size: 1rem;
   font-weight: 500;
   text-transform: none;
@@ -310,11 +310,17 @@ footer .footer__right:hover {
   margin: auto;
   text-align: center;
 }
+.sobremi .sobremi__ul .sobremi__ulLi {
+  padding-bottom: 5px;
+}
 .sobremi .sobremi__retrato {
   width: 80%;
   margin: 5vh auto;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
+
 .trabajos__h2 {
   color: #161215;
   background: #e4d9d9;
@@ -893,6 +899,9 @@ footer .footer__right:hover {
   .soltate .soltate__h2 {
     font-size: 1.9rem;
   }
+  .soltate .soltate__ul {
+    width: 90%;
+  }
 
   .sobremi {
     width: 100%;
@@ -901,6 +910,15 @@ footer .footer__right:hover {
   .sobremi .sobremi__h2 {
     font-size: 1.9rem;
   }
+  .sobremi .sobremi__retratoArchivo {
+    width: 100%;
+    transform: scale(1.5);
+  }
+
+  .trabajos__h2 {
+    font-size: 1.9rem;
+  }
+
   .amigueros__h2 {
     font-size: 1.9rem;
   }

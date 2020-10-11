@@ -55,22 +55,23 @@
 		text-align: center;
 	}
 
-	.sobremi__p {
+	.sobremi__ul {
 		@include font($regular-font, 500, none);
 		letter-spacing: .1rem;
 		width: 80%;
 		margin: auto;
 		text-align: center;
+
+		.sobremi__ulLi {
+			padding-bottom: 5px;
+		}
 	}
 
 	.sobremi__retrato {
 		width: 80%;
 		margin: 5vh auto;
 		overflow: hidden;
-		// display: none;
-
-		.sobremi__retratoArchivo {
-
-		}
+		display: flex;
+		justify-content: center;
 	}
 }

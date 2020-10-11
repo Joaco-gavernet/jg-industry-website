@@ -83,6 +83,10 @@
 		.soltate__h2 {
 			font-size: $h2-font-mobile;
 		}
+
+		.soltate__ul {
+			width: 90%;
+		}
 	}
 
 	.sobremi {
@@ -93,10 +97,16 @@
 			font-size: $h2-font-mobile;
 		}
 
-		.sobremi__retrato {
+		.sobremi__retratoArchivo {
+			width: 100%;
+			transform: scale(1.5);
 		}
 	}
 
+	// trabajos
+	.trabajos__h2 {
+		font-size: $h2-font-mobile;
+	}
 	
 	// amigueros
 	.amigueros__h2 {
