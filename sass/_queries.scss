@@ -17,11 +17,13 @@
 
 		.nav__link {
 			margin-left: 6vw;
-			width: 75px;
+			width: 80%;
+			min-width: 70px;
+			max-width: 80px;
 			
 			.nav__linkLogo {
 				padding: 15px;
-				width: inherit;
+				width: 100%;
 			}
 		}
 
@@ -67,7 +69,7 @@
 		height: 88vh;
 
 		.inicio__tituloH1 {
-			font-size: 14vw;
+			font-size: 4rem;
 			letter-spacing: 1vw;
 		}
 	}
@@ -90,6 +92,10 @@
 		.virtudesydefectos__h2 {
 			font-size: $h2-font-mobile;
 		}
+
+		.virtudesydefectos__panoramica {
+			width: 90%;
+		}
 	}
 
 	
@@ -109,10 +115,6 @@
 		.amigo1__instagram {
 			width: 100%;
 			margin-top: 10vh;
-
-			.instagram__link {
-				width: 80%;
-			}
 		}
 	}
 
@@ -120,8 +122,6 @@
 		height: initial;
 
 		.amigo3__multimedia {
-
-			
 			.amigo3__multimediaContenedor {
 				display: none;
 				width: 0%;
@@ -130,6 +130,12 @@
 			.amigo3__multimediaContenedor--mobile {
 				width: 95%;
 				height: auto;
+			}
+		}
+
+		.amigo3__descripcion {
+			.amigo3__descripcionP {
+				width: 95%;
 			}
 		}
 	}

@@ -95,8 +95,9 @@ body {
 }
 .nav .menumobile__hamburguesa {
   display: none;
-  width: 60px;
-  height: auto;
+  width: 70%;
+  min-width: 55px;
+  max-width: 65px;
 }
 .nav #menumobile__desplegable {
   position: fixed;
@@ -231,13 +232,6 @@ footer .footer__right:hover {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   margin-bottom: 0.7rem;
-  /* .inicio__tituloH1Left {
-  } */
-  /* .inicio__tituloH1Right {
-  } */
-}
-.inicio__titulo .inicio__tituloH1 a:hover {
-  color: #fffdf8;
 }
 .inicio__titulo .inicio__tituloH4 {
   font-size: 0.7rem;
@@ -558,14 +552,14 @@ footer .footer__right:hover {
   transform: scale(1.05);
 }
 .amigueros__amigo1 .amigo1__instagram .instagram__link {
-  width: 80%;
+  width: 100%;
   border-radius: 5%;
 }
 
 .amigueros__amigo2 {
   background: #e4d9d9;
   width: 100%;
-  padding: 20vh 0 20vh 0;
+  padding: 10vh 0;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -629,14 +623,14 @@ footer .footer__right:hover {
   align-content: center;
 }
 .amigueros__amigo2 .amigo2__multimedia .multimedia__video {
-  width: 80%;
+  width: 85%;
   height: 75vh;
 }
 
 .amigueros__amigo3 {
   background: #8ab0bc;
   width: 100%;
-  padding: 15vh 0 20vh 0;
+  padding: 10vh;
   display: flex;
   flex-flow: wrap;
   align-content: center;
@@ -877,11 +871,13 @@ footer .footer__right:hover {
   }
   .nav .nav__link {
     margin-left: 6vw;
-    width: 75px;
+    width: 80%;
+    min-width: 70px;
+    max-width: 80px;
   }
   .nav .nav__link .nav__linkLogo {
     padding: 15px;
-    width: inherit;
+    width: 100%;
   }
   .nav .nav__menu {
     display: none;
@@ -921,7 +917,7 @@ footer .footer__right:hover {
     height: 88vh;
   }
   .inicio__titulo .inicio__tituloH1 {
-    font-size: 14vw;
+    font-size: 4rem;
     letter-spacing: 1vw;
   }
 
@@ -941,6 +937,9 @@ footer .footer__right:hover {
   .virtudesydefectos .virtudesydefectos__h2 {
     font-size: 1.9rem;
   }
+  .virtudesydefectos .virtudesydefectos__panoramica {
+    width: 90%;
+  }
 
   .amigueros__h2 {
     font-size: 1.9rem;
@@ -957,9 +956,6 @@ footer .footer__right:hover {
     width: 100%;
     margin-top: 10vh;
   }
-  .amigueros__amigo1 .amigo1__instagram .instagram__link {
-    width: 80%;
-  }
 
   .amigueros__amigo3 {
     height: initial;
@@ -971,6 +967,9 @@ footer .footer__right:hover {
   .amigueros__amigo3 .amigo3__multimedia .amigo3__multimediaContenedor--mobile {
     width: 95%;
     height: auto;
+  }
+  .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionP {
+    width: 95%;
   }
 
   .redes {

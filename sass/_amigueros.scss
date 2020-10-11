@@ -70,7 +70,7 @@
 		}
 		
 		.instagram__link {
-			width: 80%;
+			width: 100%;
 			border-radius: 5%;
 		}
 	}
@@ -79,7 +79,7 @@
 .amigueros__amigo2 {
 	background: #e4d9d9;
 	width: 100%;
-	padding: 20vh 0 20vh 0;
+	padding: 10vh 0;
 	@include flex (flex, wrap, center, center);
 	order: 2;
 	
@@ -136,7 +136,7 @@
 		@include flex(flex, nowrap, center, center);
 		
 		.multimedia__video {
-			width: 80%;
+			width: 85%;
 			height: 75vh;
 		}
 	}
@@ -145,7 +145,7 @@
 .amigueros__amigo3 {
 	background: #8ab0bc;
 	width: 100%;
-	padding: 15vh 0 20vh 0;
+	padding: 10vh;
 	display: flex;
 	flex-flow: wrap;
 	align-content: center;

@@ -73,8 +73,9 @@
 
 	.menumobile__hamburguesa {
 		display: none;
-		width: 60px;
-		height: auto;
+		width: 70%;
+		min-width: 55px;
+		max-width: 65px;
 	}
 
 	#menumobile__desplegable {
