@@ -1,6 +1,7 @@
 // Archivo. scss para contacta.html
 .contactame {
 	width: 31%;
+	height: 92vh;
 	background: #8ab0bc;
 	color: $color-claro;
 	@include flex(flex, wrap, center, center);
@@ -27,6 +28,7 @@
 
 .formulario {
 	width: 40%;
+	height: 92vh;
 	background: #e4d9d9;
 	@include flex(flex, wrap, center, center);
 	
@@ -122,6 +124,7 @@
 .redes {
 	width: 28.98%;
 	height: 100%;
+	min-height: 92vh;
 	background: $color-cielo;
 	@include flex(flex, nowrap, center, center);
 	align-items: center;

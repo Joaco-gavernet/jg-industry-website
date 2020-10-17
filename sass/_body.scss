@@ -1,6 +1,6 @@
 // body
 body {
-    background: url('../img/paisaje-bariloche-favorito.jpg') no-repeat center fixed;
+    background: url('../img/paisaje-bariloche-favorito-comprimida.jpg') no-repeat center fixed;
     background-size: cover;
     position: relative;
     /* background-position: center bottom; */
@@ -8,6 +8,6 @@ body {
     // height: 100%;
     max-width: 1920px;
     display: grid;
-    grid-template-rows: 92vh 8vh;
+    grid-template-rows: 100vh;
     grid-template-columns: 20% 80%;
 }

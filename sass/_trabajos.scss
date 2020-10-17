@@ -16,20 +16,6 @@
 		padding-top: 10px;
 	}
 	
-	.trabajos__work1,
-	.trabajos__work2,
-	.trabajos__work3,
-	.trabajos__work4 {
-		transition: transform 1.5s ease-in;
-	}
-	
-	.trabajos__work1:hover,
-	.trabajos__work2:hover,
-	.trabajos__work3:hover,
-	.trabajos__work4:hover {
-		transform: scale(1.1);
-	}
-	
 	.trabajos__work1 {
 		background: no-repeat center/100% url("../img/gabiota-horizontal.jpg");
 		width: 100%;

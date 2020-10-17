@@ -20,14 +20,14 @@ ul {
 }
 
 body {
-  background: url("../img/paisaje-bariloche-favorito.jpg") no-repeat center fixed;
+  background: url("../img/paisaje-bariloche-favorito-comprimida.jpg") no-repeat center fixed;
   background-size: cover;
   position: relative;
   /* background-position: center bottom; */
   width: 100%;
   max-width: 1920px;
   display: grid;
-  grid-template-rows: 92vh 8vh;
+  grid-template-rows: 100vh;
   grid-template-columns: 20% 80%;
 }
 
@@ -149,6 +149,9 @@ body {
 
 .contenedor {
   grid-area: 1/2/2/3;
+}
+
+.contenido {
   position: relative;
   display: flex;
   flex-flow: wrap;
@@ -170,7 +173,11 @@ footer {
   letter-spacing: 1.5px;
   font-weight: 800;
   z-index: 2;
-  grid-area: 2/2/3/3;
+  height: 8vh;
+  width: 100%;
+  position: initial;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -214,6 +221,7 @@ footer .footer__right:hover {
 .inicio__titulo {
   color: #16171E;
   width: 100%;
+  height: 92vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -243,6 +251,7 @@ footer .footer__right:hover {
 
 .soltate {
   width: 40%;
+  height: 92vh;
   display: inline-block;
   background: #8A9DBC;
   color: #fffdf8;
@@ -288,6 +297,7 @@ footer .footer__right:hover {
 
 .sobremi {
   width: 60%;
+  height: 92vh;
   display: inline-block;
   background: #e4d9d9;
   color: #161215;
@@ -315,8 +325,9 @@ footer .footer__right:hover {
 }
 .sobremi .sobremi__retrato {
   width: 80%;
+  height: 50%;
+  object-fit: cover;
   margin: 5vh auto;
-  overflow: hidden;
   display: flex;
   justify-content: center;
 }
@@ -338,18 +349,6 @@ footer .footer__right:hover {
 }
 .trabajos__workLink .work__contenidoP {
   padding-top: 10px;
-}
-.trabajos__workLink .trabajos__work1,
-.trabajos__workLink .trabajos__work2,
-.trabajos__workLink .trabajos__work3,
-.trabajos__workLink .trabajos__work4 {
-  transition: transform 1.5s ease-in;
-}
-.trabajos__workLink .trabajos__work1:hover,
-.trabajos__workLink .trabajos__work2:hover,
-.trabajos__workLink .trabajos__work3:hover,
-.trabajos__workLink .trabajos__work4:hover {
-  transform: scale(1.1);
 }
 .trabajos__workLink .trabajos__work1 {
   background: no-repeat center/100% url("../img/gabiota-horizontal.jpg");
@@ -600,7 +599,7 @@ footer .footer__right:hover {
 .amigueros__amigo3 {
   background: #8ab0bc;
   width: 100%;
-  padding: 10vh;
+  padding: 10vh 0;
   display: flex;
   flex-flow: wrap;
   align-content: center;
@@ -608,7 +607,7 @@ footer .footer__right:hover {
 }
 .amigueros__amigo3 .amigo3__multimedia {
   width: 100%;
-  padding-top: 8vh;
+  padding-top: 5vh;
   display: flex;
   justify-content: space-evenly;
 }
@@ -684,6 +683,7 @@ footer .footer__right:hover {
 
 .contactame {
   width: 31%;
+  height: 92vh;
   background: #8ab0bc;
   color: #fffdf8;
   display: flex;
@@ -716,6 +716,7 @@ footer .footer__right:hover {
 
 .formulario {
   width: 40%;
+  height: 92vh;
   background: #e4d9d9;
   display: flex;
   flex-flow: wrap;
@@ -794,6 +795,7 @@ footer .footer__right:hover {
 .redes {
   width: 28.98%;
   height: 100%;
+  min-height: 92vh;
   background: #8A9DBC;
   display: flex;
   flex-flow: nowrap;
@@ -825,7 +827,7 @@ footer .footer__right:hover {
 
 @media (max-width: 768px) {
   body {
-    grid-template-rows: 12vh 1fr 12vh;
+    grid-template-rows: 12vh 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -864,23 +866,11 @@ footer .footer__right:hover {
     grid-area: 2/1/3/2;
   }
 
-  .cs {
-    top: 12vh;
-    width: 100%;
-    margin-bottom: 12vh;
-  }
-
   footer {
     grid-area: 3/1/4/2;
   }
   footer .footer__left {
     font-size: 0.8rem;
-  }
-
-  .footerfixed {
-    height: 12vh;
-    width: 100%;
-    grid-area: 3/1/4/2;
   }
 
   .inicio__titulo {
@@ -893,6 +883,7 @@ footer .footer__right:hover {
 
   .soltate {
     width: 100%;
+    height: 100%;
     padding: 5vh 0 12vh 0;
     order: 1;
   }
@@ -902,17 +893,21 @@ footer .footer__right:hover {
   .soltate .soltate__ul {
     width: 90%;
   }
+  .soltate .soltate__imagen {
+    height: 350px;
+    object-fit: cover;
+  }
 
   .sobremi {
     width: 100%;
-    padding: 3vh 0 10vh 0;
+    height: 100%;
+    padding: 3vh 0;
   }
   .sobremi .sobremi__h2 {
     font-size: 1.9rem;
   }
-  .sobremi .sobremi__retratoArchivo {
-    width: 100%;
-    transform: scale(1.5);
+  .sobremi .sobremi__retrato {
+    height: 350px;
   }
 
   .trabajos__h2 {
@@ -926,24 +921,33 @@ footer .footer__right:hover {
   .amigueros__amigo1 {
     flex-flow: column;
     align-items: center;
+    padding: 5vh 0;
   }
   .amigueros__amigo1 .amigo1__descripcion {
     width: 90%;
   }
   .amigueros__amigo1 .amigo1__instagram {
-    width: 100%;
-    margin-top: 10vh;
+    width: 85%;
+    margin-top: 5vh;
+  }
+
+  .amigueros__amigo2 {
+    padding: 5vh 0;
   }
 
   .amigueros__amigo3 {
     height: initial;
+    padding: 5vh 0;
+  }
+  .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionP {
+    width: 90%;
   }
   .amigueros__amigo3 .amigo3__multimedia .amigo3__multimediaContenedor {
     display: none;
     width: 0%;
   }
   .amigueros__amigo3 .amigo3__multimedia .amigo3__multimediaContenedor--mobile {
-    width: 95%;
+    width: 80%;
     height: auto;
   }
   .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionP {
@@ -971,6 +975,12 @@ footer .footer__right:hover {
     justify-content: center;
     align-content: center;
   }
+  .redes .redes__ul li {
+    text-align: center;
+  }
+  .redes .redes__ul li .redes__ulImg {
+    width: 80%;
+  }
 
   .formulario {
     width: 100%;
@@ -979,7 +989,8 @@ footer .footer__right:hover {
 
   .contactame {
     width: 100%;
-    padding: 10vh 0;
+    height: 60vh;
+    padding: 0;
     order: 2;
   }
   .contactame .contactame__h2 {
@@ -991,8 +1002,15 @@ footer .footer__right:hover {
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  .virtudesydefectos .virtudesydefectos__panoramica {
-    display: none;
+  .soltate {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5vh;
+    order: 1;
+  }
+
+  .sobremi {
+    width: 100%;
   }
 
   .formulario {

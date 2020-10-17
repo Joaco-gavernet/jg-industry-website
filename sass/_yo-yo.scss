@@ -1,6 +1,7 @@
 // Archivo yo-yo.html
 .soltate {
 	width: 40%;
+	height: 92vh;
 	display: inline-block;
 	background: $color-cielo;
 	color: $color-claro;
@@ -43,6 +44,7 @@
 
 .sobremi {
 	width: 60%;
+	height: 92vh;
 	display: inline-block;
 	background: $color-salmon;
 	color: $color-oscuro;
@@ -69,8 +71,9 @@
 
 	.sobremi__retrato {
 		width: 80%;
+		height: 50%;
+		object-fit: cover;
 		margin: 5vh auto;
-		overflow: hidden;
 		display: flex;
 		justify-content: center;
 	}
