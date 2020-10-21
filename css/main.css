@@ -95,8 +95,8 @@ body {
 }
 .nav .menumobile__hamburguesa {
   display: none;
-  width: 70%;
-  min-width: 55px;
+  width: 40%;
+  min-width: 40px;
   max-width: 65px;
 }
 .nav #menumobile__desplegable {
@@ -108,10 +108,10 @@ body {
   transition: right 0.5s, background ease-in 1s;
 }
 .nav #menumobile__desplegable .desplegable__close {
-  width: 50px;
+  width: 30px;
   position: absolute;
-  top: 2vh;
-  right: 5vw;
+  top: 3vh;
+  right: 9vw;
   z-index: 1;
 }
 .nav #menumobile__desplegable .desplegable__links {
@@ -157,19 +157,9 @@ body {
   flex-flow: wrap;
 }
 
-.cs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80%;
-  margin-bottom: 8vh;
-  display: flex;
-  flex-flow: wrap;
-}
-
 footer {
   color: #fffdf8;
-  background: #3d596dc4;
+  background: #3d596d64;
   letter-spacing: 1.5px;
   font-weight: 800;
   z-index: 2;
@@ -178,21 +168,24 @@ footer {
   position: initial;
   bottom: 0;
   right: 0;
+}
+footer .footer__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 3vh 0;
 }
-footer .footer__left {
+footer .footer__top .footer__left {
   font-size: 0.6rem;
   margin-left: 3vw;
 }
-footer .footer__right {
+footer .footer__top .footer__right {
   font-size: 0.7rem;
   font-weight: none;
   text-transform: uppercase;
   margin-right: 3vw;
 }
-footer .footer__right:hover {
+footer .footer__top .footer__right:hover {
   animation-name: arrow-animation;
   animation-iteration-count: 2;
   animation-timing-function: ease-in;
@@ -208,6 +201,13 @@ footer .footer__right:hover {
   100% {
     word-spacing: 1;
   }
+}
+footer .footer__firma {
+  width: 150px;
+  position: absolute;
+  left: 30vw;
+  bottom: 5vh;
+  display: none;
 }
 
 .footerfixed {
@@ -752,6 +752,19 @@ footer .footer__right:hover {
   display: flex;
   flex-flow: wrap;
 }
+.formulario .formulario__form input,
+.formulario .formulario__form select,
+.formulario .formulario__form textarea {
+  border: 0;
+  padding: 0.25rem;
+  outline: 0;
+  border-bottom: 1px solid #161215;
+  line-height: 1rem;
+  background: #e4d9d9;
+}
+.formulario .formulario__form input::selection {
+  background: #8A9DBC;
+}
 .formulario .formulario__form .form__nombre, .formulario .formulario__form .form__telefono, .formulario .formulario__form .form__email, .formulario .formulario__form .form__instagram {
   width: 100%;
   padding: 5px;
@@ -843,12 +856,10 @@ footer .footer__right:hover {
   }
   .nav .nav__link {
     margin-left: 6vw;
-    width: 80%;
-    min-width: 70px;
-    max-width: 80px;
+    width: 60px;
   }
   .nav .nav__link .nav__linkLogo {
-    padding: 15px;
+    padding: 10px;
     width: 100%;
   }
   .nav .nav__menu {
@@ -859,7 +870,7 @@ footer .footer__right:hover {
   }
   .nav .menumobile__hamburguesa {
     display: block;
-    margin-right: 6vw;
+    margin-right: 3vw;
   }
 
   .contenedor {
@@ -867,17 +878,20 @@ footer .footer__right:hover {
   }
 
   footer {
-    grid-area: 3/1/4/2;
+    height: 40vh;
   }
   footer .footer__left {
     font-size: 0.8rem;
+  }
+  footer .footer__firma {
+    display: initial;
   }
 
   .inicio__titulo {
     height: 88vh;
   }
   .inicio__titulo .inicio__tituloH1 {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 1vw;
   }
 
@@ -890,7 +904,10 @@ footer .footer__right:hover {
   .soltate .soltate__h2 {
     font-size: 1.9rem;
   }
-  .soltate .soltate__ul {
+  .soltate .soltate__p {
+    width: 90%;
+  }
+  .soltate .soltate__h3 {
     width: 90%;
   }
   .soltate .soltate__imagen {
@@ -963,10 +980,10 @@ footer .footer__right:hover {
     display: block;
     writing-mode: horizontal-tb;
     order: 0;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     font-weight: 800;
     text-transform: uppercase;
-    padding: 2.5rem;
+    padding: 0 0 20px 0;
   }
   .redes .redes__ul {
     width: 100%;
@@ -979,12 +996,23 @@ footer .footer__right:hover {
     text-align: center;
   }
   .redes .redes__ul li .redes__ulImg {
-    width: 80%;
+    width: 60%;
   }
 
   .formulario {
     width: 100%;
-    padding: 5vh 0;
+    height: auto;
+    padding: 3vh 0 10vh 0;
+  }
+  .formulario .formulario__h2 {
+    font-size: 1.9rem;
+    padding: 20px 0;
+  }
+  .formulario .formulario__p {
+    width: 85%;
+  }
+  .formulario .formulario__form {
+    width: 85%;
   }
 
   .contactame {
@@ -994,7 +1022,7 @@ footer .footer__right:hover {
     order: 2;
   }
   .contactame .contactame__h2 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
   .contactame .contactame__ul {
     width: 50%;

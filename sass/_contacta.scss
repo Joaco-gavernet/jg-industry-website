@@ -57,6 +57,21 @@
 		margin: auto;
 		display: flex;
 		flex-flow: wrap;
+
+		input,
+		select,
+		textarea {
+			border: 0;
+			padding: .25rem;
+			outline: 0;
+			border-bottom: 1px solid $color-oscuro;
+			line-height: 1rem;
+			background: $color-salmon;
+		}
+
+		input::selection {
+			background: $color-cielo;
+		}
 		
 		.form__nombre {
 			width: 100%;
