@@ -29,21 +29,6 @@
 
 			&:hover {
 				color: $color-oscuro;
-				animation-name: arrow-animation;
-				@keyframes arrow-animation {
-					0% {
-						word-spacing: 1;
-					}
-					50% {
-						word-spacing: 1.5rem;
-					}
-					100% {
-						word-spacing: 1;
-					}
-				}
-				animation-iteration-count: 2;
-				animation-timing-function: ease-in;
-				animation-duration: .5s;
 			}
 		}
 		
@@ -159,7 +144,7 @@
 		
 		.amigo3__multimediaContenedor {
 			display: inline-block;
-			width: 22%;
+			width: 23%;
 			border-radius: 2%;
 			overflow: hidden;
 			
@@ -175,7 +160,7 @@
 
 		.amigo3__multimediaContenedor--mobile {
 			display: inline-block;
-			width: 22%;
+			width: 23%;
 			border-radius: 2%;
 			overflow: hidden;
 

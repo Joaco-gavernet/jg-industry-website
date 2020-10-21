@@ -19,12 +19,12 @@ footer {
 	align-items: center;
 	padding: 3vh 0;
 
-		.footer__left {
+		.footer__topLeft {
 			font-size: .6rem;
 			margin-left: 3vw;
 		}
 		
-		.footer__right {
+		.footer__topRight {
 			@include font(.7rem, none, uppercase);
 			margin-right: 3vw;
 			

@@ -20,10 +20,12 @@ ul {
 }
 
 body {
-  background: url("../img/paisaje-bariloche-favorito-comprimida.jpg") no-repeat center fixed;
+  background: url("../img/paisaje-bariloche-favorito-comprimida.jpg");
+  background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
-  /* background-position: center bottom; */
   width: 100%;
   max-width: 1920px;
   display: grid;
@@ -175,17 +177,17 @@ footer .footer__top {
   align-items: center;
   padding: 3vh 0;
 }
-footer .footer__top .footer__left {
+footer .footer__top .footer__topLeft {
   font-size: 0.6rem;
   margin-left: 3vw;
 }
-footer .footer__top .footer__right {
+footer .footer__top .footer__topRight {
   font-size: 0.7rem;
   font-weight: none;
   text-transform: uppercase;
   margin-right: 3vw;
 }
-footer .footer__top .footer__right:hover {
+footer .footer__top .footer__topRight:hover {
   animation-name: arrow-animation;
   animation-iteration-count: 2;
   animation-timing-function: ease-in;
@@ -484,21 +486,6 @@ footer .footer__firma {
 }
 .amigueros__amigo1 .amigo1__descripcion .amigo1__descripcionH3:hover {
   color: #161215;
-  animation-name: arrow-animation;
-  animation-iteration-count: 2;
-  animation-timing-function: ease-in;
-  animation-duration: 0.5s;
-}
-@keyframes arrow-animation {
-  0% {
-    word-spacing: 1;
-  }
-  50% {
-    word-spacing: 1.5rem;
-  }
-  100% {
-    word-spacing: 1;
-  }
 }
 .amigueros__amigo1 .amigo1__descripcion .amigo1__descripcionP {
   color: #fffdf8;
@@ -613,7 +600,7 @@ footer .footer__firma {
 }
 .amigueros__amigo3 .amigo3__multimedia .amigo3__multimediaContenedor {
   display: inline-block;
-  width: 22%;
+  width: 23%;
   border-radius: 2%;
   overflow: hidden;
 }
@@ -626,7 +613,7 @@ footer .footer__firma {
 }
 .amigueros__amigo3 .amigo3__multimedia .amigo3__multimediaContenedor--mobile {
   display: inline-block;
-  width: 22%;
+  width: 23%;
   border-radius: 2%;
   overflow: hidden;
 }
@@ -880,7 +867,7 @@ footer .footer__firma {
   footer {
     height: 40vh;
   }
-  footer .footer__left {
+  footer .footer__topLeft {
     font-size: 0.8rem;
   }
   footer .footer__firma {
