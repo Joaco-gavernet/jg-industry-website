@@ -212,14 +212,6 @@ footer .footer__firma {
   display: none;
 }
 
-.footerfixed {
-  width: 80%;
-  height: 8vh;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
 .inicio__titulo {
   color: #16171E;
   width: 100%;
