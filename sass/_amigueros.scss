@@ -79,6 +79,7 @@
 		.instagram__link {
 			width: 100%;
 			border-radius: 5%;
+			box-shadow: $box-shadow;
 		}
 	}
 }
@@ -145,6 +146,8 @@
 		.multimedia__video {
 			width: 85%;
 			height: 75vh;
+			border-radius: 2%;
+			box-shadow: $box-shadow;
 		}
 	}
 }
@@ -169,6 +172,7 @@
 			width: 23%;
 			border-radius: 2%;
 			overflow: hidden;
+			box-shadow: $box-shadow;
 			
 			.amigo3__contenedorArchivo {
 				width: 100%;
@@ -185,6 +189,7 @@
 			width: 23%;
 			border-radius: 2%;
 			overflow: hidden;
+			box-shadow: $box-shadow;
 
 			.amigo3__contenedorArchivo--mobile {
 				width: 100%;
@@ -304,67 +309,7 @@
 			margin: 5vh auto;
 			display: flex;
 			justify-content: center;
-		}
-	}
-
-	.amigueros__amigo4 {
-	width: 100%;
-	padding: 10vh 0;
-	background: $color-salmon-light;
-	@include flex (flex, wrap, center, center);
-	order: 2;
-
-	.amigo4__descripcion {
-		display: flex;
-		flex-direction: column;
-
-		.amigo4__descripcionH3 {
-			color: $color-oscuro;
-			@include font(2rem, 800, none);
-			letter-spacing: .07rem;
-			padding: 0 0 20px 0;
-			margin: auto;
-			
-			&:hover {
-				animation-name: arrow-animation;
-				@keyframes arrow-animation {
-					0% {
-						word-spacing: 1;
-					}
-					50% {
-						word-spacing: 1.5rem;
-					}
-					100% {
-						word-spacing: 1;
-					}
-				}
-				animation-iteration-count: 2;
-				animation-timing-function: ease-in;
-				animation-duration: .5s;
-			}
-		}
-
-		.amigo4__descripcionP {
-			width: 80%;
-			@include font($regular-font, 500, none);
-			letter-spacing: .07rem;
-			line-height: 1.6;
-			text-align: center;
-			margin: auto;
-		}
-	}
-
-	.amigo4__multimedia {
-		padding-top: 5vh;
-
-		.amigo4__multimediaArchivo {
-			border-radius: 2%;
-			width: 90%;
-			min-height: 500px;
-			object-fit: cover;
-			margin: 5vh auto;
-			display: flex;
-			justify-content: center;
+			box-shadow: $box-shadow;
 		}
 	}
 }

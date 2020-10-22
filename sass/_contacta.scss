@@ -78,6 +78,7 @@
 			padding: 5px;
 			margin: 2%;
 			font-size: 1rem;
+			box-shadow: -1px 1px 5px rgba(0, 0, 0, .05);
 		}
 		
 		.form__instagram {
@@ -128,6 +129,7 @@
 			padding: 5px 20px;
 			margin: 2%;
 			transition: background .5s ease-in;
+			box-shadow: -1px 1px 5px rgba(0, 0, 0, .7);
 		}
 		
 		.form__boton:hover {

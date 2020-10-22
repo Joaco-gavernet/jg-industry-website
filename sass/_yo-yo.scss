@@ -17,6 +17,8 @@
 	.soltate__imagen {
 		width: 90%;
 		margin: 0 5% 15px 5%;
+		border-radius: 2%;
+		box-shadow: $box-shadow;
 	}
 	
 	.soltate__p {
@@ -76,6 +78,7 @@
 		margin: 5vh auto;
 		display: flex;
 		justify-content: center;
-		box-shadow: -2px 2px 20px rgba(0, 0, 0, .3);
+		border-radius: 2%;
+		box-shadow: $box-shadow;
 	}
 }

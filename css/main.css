@@ -262,6 +262,8 @@ footer .footer__firma {
 .soltate .soltate__imagen {
   width: 90%;
   margin: 0 5% 15px 5%;
+  border-radius: 2%;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8);
 }
 .soltate .soltate__p {
   font-size: 1rem;
@@ -324,6 +326,8 @@ footer .footer__firma {
   margin: 5vh auto;
   display: flex;
   justify-content: center;
+  border-radius: 2%;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8);
 }
 
 .trabajos__h2 {
@@ -440,6 +444,34 @@ footer .footer__firma {
   display: block;
   opacity: 0.8;
 }
+.trabajos__workLink .trabajos__work5 {
+  background: no-repeat center/100% url("../img/pajarito-ceramica.jpg");
+  width: 100%;
+  background-size: contain;
+  padding: 26.4%;
+  position: relative;
+}
+.trabajos__workLink .trabajos__work6 {
+  background: no-repeat center/100% url("../img/cafe-flores-frutos.jpg");
+  width: 100%;
+  background-size: contain;
+  padding: 26.4%;
+  position: relative;
+}
+.trabajos__workLink .trabajos__work7 {
+  background: no-repeat center/100% url("../img/norton.jpg");
+  width: 100%;
+  background-size: contain;
+  padding: 26.4%;
+  position: relative;
+}
+.trabajos__workLink .trabajos__work8 {
+  background: no-repeat center/100% url("../img/frutos-secos.jpg");
+  width: 100%;
+  background-size: contain;
+  padding: 27%;
+  position: relative;
+}
 
 .amigueros__h2 {
   color: #fffdf8;
@@ -521,6 +553,7 @@ footer .footer__firma {
 .amigueros__amigo1 .amigo1__instagram .instagram__link {
   width: 100%;
   border-radius: 5%;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8);
 }
 
 .amigueros__amigo2 {
@@ -592,6 +625,8 @@ footer .footer__firma {
 .amigueros__amigo2 .amigo2__multimedia .multimedia__video {
   width: 85%;
   height: 75vh;
+  border-radius: 2%;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8);
 }
 
 .amigueros__amigo3 {
@@ -614,6 +649,7 @@ footer .footer__firma {
   width: 23%;
   border-radius: 2%;
   overflow: hidden;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8);
 }
 .amigueros__amigo3 .amigo3__multimedia .amigo3__multimediaContenedor .amigo3__contenedorArchivo {
   width: 100%;
@@ -627,6 +663,7 @@ footer .footer__firma {
   width: 23%;
   border-radius: 2%;
   overflow: hidden;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8);
 }
 .amigueros__amigo3 .amigo3__multimedia .amigo3__multimediaContenedor--mobile .amigo3__contenedorArchivo--mobile {
   width: 100%;
@@ -740,68 +777,7 @@ footer .footer__firma {
   margin: 5vh auto;
   display: flex;
   justify-content: center;
-}
-.amigueros__amigo4 .amigueros__amigo5 {
-  width: 100%;
-  padding: 10vh 0;
-  background: #e4d9d9bb;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  align-content: center;
-  order: 5;
-}
-.amigueros__amigo4 .amigueros__amigo5 .amigo5__descripcion {
-  display: flex;
-  flex-direction: column;
-}
-.amigueros__amigo4 .amigueros__amigo5 .amigo5__descripcion .amigo5__descripcionH3 {
-  color: #1a1a1a;
-  font-size: 2rem;
-  font-weight: 800;
-  text-transform: none;
-  letter-spacing: 0.07rem;
-  padding: 0 0 20px 0;
-  margin: auto;
-}
-.amigueros__amigo4 .amigueros__amigo5 .amigo5__descripcion .amigo5__descripcionH3:hover {
-  animation-name: arrow-animation;
-  animation-iteration-count: 2;
-  animation-timing-function: ease-in;
-  animation-duration: 0.5s;
-}
-@keyframes arrow-animation {
-  0% {
-    word-spacing: 1;
-  }
-  50% {
-    word-spacing: 1.5rem;
-  }
-  100% {
-    word-spacing: 1;
-  }
-}
-.amigueros__amigo4 .amigueros__amigo5 .amigo5__descripcion .amigo5__descripcionP {
-  width: 80%;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: none;
-  letter-spacing: 0.07rem;
-  line-height: 1.6;
-  text-align: center;
-  margin: auto;
-}
-.amigueros__amigo4 .amigueros__amigo5 .amigo5__multimedia {
-  padding-top: 5vh;
-}
-.amigueros__amigo4 .amigueros__amigo5 .amigo5__multimedia .amigo5__multimediaArchivo {
-  border-radius: 2%;
-  width: 90%;
-  min-height: 500px;
-  object-fit: cover;
-  margin: 5vh auto;
-  display: flex;
-  justify-content: center;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8);
 }
 
 .contactame {
@@ -893,6 +869,7 @@ footer .footer__firma {
   padding: 5px;
   margin: 2%;
   font-size: 1rem;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.05);
 }
 .formulario .formulario__form .form__edad, .formulario .formulario__form .form__sexo {
   width: 46%;
@@ -923,6 +900,7 @@ footer .footer__firma {
   padding: 5px 20px;
   margin: 2%;
   transition: background 0.5s ease-in;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 .formulario .formulario__form .form__boton:hover {
   background: #94a6c2;
