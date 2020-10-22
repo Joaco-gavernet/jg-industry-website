@@ -1072,6 +1072,11 @@ footer .footer__firma {
     width: 95%;
   }
 
+  .amigueros__amigo4 .amigo4__descripcion .amigo4__descripcionH3 {
+    letter-spacing: 0.001rem;
+    word-spacing: -0.8rem;
+  }
+
   .redes {
     width: 100%;
     padding: 5vh 0;
