@@ -235,6 +235,19 @@
 		width: 100%;
 	}
 
+	.amigueros__amigo1 {
+		flex-flow: wrap;
+
+		.amigo1__descripcion {
+			width: 80%;
+			padding-bottom: 5vh;
+		}
+
+		.amigo1__instagram {
+			width: 70%;
+		}
+	}
+
 	.formulario {
 		width: 60%;
 

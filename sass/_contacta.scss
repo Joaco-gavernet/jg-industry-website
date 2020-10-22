@@ -2,7 +2,7 @@
 .contactame {
 	width: 31%;
 	height: 92vh;
-	background: #8ab0bc;
+	background: $color-turquesa-light;
 	color: $color-claro;
 	@include flex(flex, wrap, center, center);
 	
@@ -29,7 +29,7 @@
 .formulario {
 	width: 40%;
 	height: 92vh;
-	background: #e4d9d9;
+	background: $color-salmon;
 	@include flex(flex, wrap, center, center);
 	
 	.formulario__h2 {
@@ -140,7 +140,7 @@
 	width: 28.98%;
 	height: 100%;
 	min-height: 92vh;
-	background: $color-cielo;
+	background: $color-cielo-light;
 	@include flex(flex, nowrap, center, center);
 	align-items: center;
 	

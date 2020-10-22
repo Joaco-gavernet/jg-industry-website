@@ -247,7 +247,7 @@ footer .footer__firma {
   width: 40%;
   height: 92vh;
   display: inline-block;
-  background: #8A9DBC;
+  background: #8A9DBCbb;
   color: #fffdf8;
 }
 .soltate .soltate__h2 {
@@ -293,8 +293,8 @@ footer .footer__firma {
   width: 60%;
   height: 92vh;
   display: inline-block;
-  background: #e4d9d9;
-  color: #161215;
+  background: #e4d9d9bb;
+  color: #1a1a1a;
 }
 .sobremi .sobremi__h2 {
   font-size: 2.8rem;
@@ -327,7 +327,7 @@ footer .footer__firma {
 }
 
 .trabajos__h2 {
-  color: #161215;
+  color: #1a1a1a;
   background: #e4d9d9;
   font-size: 2.8rem;
   font-weight: 800;
@@ -453,11 +453,11 @@ footer .footer__firma {
 }
 
 .amigueros__amigo1 {
-  background: #8A9DBC;
+  background: #8A9DBCbb;
   width: 100%;
   padding: 15vh 0 15vh 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   order: 3;
 }
 .amigueros__amigo1 .amigo1__descripcion {
@@ -475,9 +475,28 @@ footer .footer__firma {
   letter-spacing: 0.15rem;
   text-align: center;
   padding: 25px 0;
+  white-space: nowrap;
+}
+.amigueros__amigo1 .amigo1__descripcion .amigo1__descripcionH3 a:hover {
+  color: inherit;
 }
 .amigueros__amigo1 .amigo1__descripcion .amigo1__descripcionH3:hover {
-  color: #161215;
+  color: #1a1a1a;
+  animation-name: arrow-animation;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+@keyframes arrow-animation {
+  0% {
+    word-spacing: 1;
+  }
+  50% {
+    word-spacing: 1.5rem;
+  }
+  100% {
+    word-spacing: 1;
+  }
 }
 .amigueros__amigo1 .amigo1__descripcion .amigo1__descripcionP {
   color: #fffdf8;
@@ -489,7 +508,7 @@ footer .footer__firma {
   text-align: center;
 }
 .amigueros__amigo1 .amigo1__instagram {
-  width: 40%;
+  width: 30%;
   max-width: 500px;
   height: auto;
   align-self: center;
@@ -505,7 +524,7 @@ footer .footer__firma {
 }
 
 .amigueros__amigo2 {
-  background: #e4d9d9;
+  background: #e4d9d9bb;
   width: 100%;
   padding: 10vh 0;
   display: flex;
@@ -519,7 +538,7 @@ footer .footer__firma {
   flex-direction: column;
 }
 .amigueros__amigo2 .amigo2__descripcion .amigo2__descripcionH3 {
-  color: #161215;
+  color: #1a1a1a;
   font-size: 2rem;
   font-weight: 800;
   text-transform: none;
@@ -555,7 +574,7 @@ footer .footer__firma {
   margin: auto;
 }
 .amigueros__amigo2 .amigo2__descripcion .amigo2__descripcionH4 {
-  color: #161215;
+  color: #1a1a1a;
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: lowercase;
@@ -576,7 +595,7 @@ footer .footer__firma {
 }
 
 .amigueros__amigo3 {
-  background: #8ab0bc;
+  background: #8ab0bcbb;
   width: 100%;
   padding: 10vh 0;
   display: flex;
@@ -630,7 +649,7 @@ footer .footer__firma {
   margin: auto;
 }
 .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionH3:hover, .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionH3 .amigo3__descripcionH3Link:hover {
-  color: #161215;
+  color: #1a1a1a;
 }
 .amigueros__amigo3 .amigo3__descripcion .amigo3__descripcionH3 .amigo3__descripcionH3Link:hover {
   animation-name: arrow-animation;
@@ -663,7 +682,7 @@ footer .footer__firma {
 .contactame {
   width: 31%;
   height: 92vh;
-  background: #8ab0bc;
+  background: #8ab0bcbb;
   color: #fffdf8;
   display: flex;
   flex-flow: wrap;
@@ -737,7 +756,7 @@ footer .footer__firma {
   border: 0;
   padding: 0.25rem;
   outline: 0;
-  border-bottom: 1px solid #161215;
+  border-bottom: 1px solid #1a1a1a;
   line-height: 1rem;
   background: #e4d9d9;
 }
@@ -788,7 +807,7 @@ footer .footer__firma {
   width: 28.98%;
   height: 100%;
   min-height: 92vh;
-  background: #8A9DBC;
+  background: #8A9DBCbb;
   display: flex;
   flex-flow: nowrap;
   justify-content: center;
@@ -1018,6 +1037,17 @@ footer .footer__firma {
 
   .sobremi {
     width: 100%;
+  }
+
+  .amigueros__amigo1 {
+    flex-flow: wrap;
+  }
+  .amigueros__amigo1 .amigo1__descripcion {
+    width: 80%;
+    padding-bottom: 5vh;
+  }
+  .amigueros__amigo1 .amigo1__instagram {
+    width: 70%;
   }
 
   .formulario {
