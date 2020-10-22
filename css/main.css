@@ -457,7 +457,7 @@ footer .footer__firma {
   width: 100%;
   padding: 15vh 0 15vh 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   order: 3;
 }
 .amigueros__amigo1 .amigo1__descripcion {
@@ -472,7 +472,7 @@ footer .footer__firma {
   font-size: 2rem;
   font-weight: 800;
   text-transform: none;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.07rem;
   text-align: center;
   padding: 25px 0;
   white-space: nowrap;
@@ -503,7 +503,7 @@ footer .footer__firma {
   font-size: 1rem;
   font-weight: 500;
   text-transform: none;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.07rem;
   line-height: 1.6;
   text-align: center;
 }
@@ -531,7 +531,7 @@ footer .footer__firma {
   flex-flow: wrap;
   justify-content: center;
   align-content: center;
-  order: 2;
+  order: 4;
 }
 .amigueros__amigo2 .amigo2__descripcion {
   display: flex;
@@ -542,7 +542,7 @@ footer .footer__firma {
   font-size: 2rem;
   font-weight: 800;
   text-transform: none;
-  letter-spacing: 0.24rem;
+  letter-spacing: 0.07rem;
   padding: 0 0 20px 0;
   margin: auto;
 }
@@ -568,7 +568,7 @@ footer .footer__firma {
   font-size: 1rem;
   font-weight: 500;
   text-transform: none;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.07rem;
   line-height: 1.6;
   text-align: center;
   margin: auto;
@@ -644,7 +644,7 @@ footer .footer__firma {
   font-size: 2rem;
   font-weight: 800;
   text-transform: none;
-  letter-spacing: 0.24rem;
+  letter-spacing: 0.07rem;
   padding: 0 0 20px 0;
   margin: auto;
 }
@@ -674,9 +674,134 @@ footer .footer__firma {
   font-size: 1rem;
   font-weight: 500;
   text-transform: none;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.07rem;
   line-height: 1.6;
   text-align: center;
+}
+
+.amigueros__amigo4 {
+  width: 100%;
+  padding: 10vh 0;
+  background: #e4d9d9bb;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center;
+  order: 2;
+}
+.amigueros__amigo4 .amigo4__descripcion {
+  display: flex;
+  flex-direction: column;
+}
+.amigueros__amigo4 .amigo4__descripcion .amigo4__descripcionH3 {
+  color: #1a1a1a;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0.07rem;
+  padding: 0 0 20px 0;
+  margin: auto;
+}
+.amigueros__amigo4 .amigo4__descripcion .amigo4__descripcionH3:hover {
+  animation-name: arrow-animation;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+@keyframes arrow-animation {
+  0% {
+    word-spacing: 1;
+  }
+  50% {
+    word-spacing: 1.5rem;
+  }
+  100% {
+    word-spacing: 1;
+  }
+}
+.amigueros__amigo4 .amigo4__descripcion .amigo4__descripcionP {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.07rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: auto;
+}
+.amigueros__amigo4 .amigo4__multimedia {
+  padding-top: 5vh;
+}
+.amigueros__amigo4 .amigo4__multimedia .amigo4__multimediaArchivo {
+  border-radius: 2%;
+  width: 90%;
+  min-height: 500px;
+  object-fit: cover;
+  margin: 5vh auto;
+  display: flex;
+  justify-content: center;
+}
+.amigueros__amigo4 .amigueros__amigo5 {
+  width: 100%;
+  padding: 10vh 0;
+  background: #e4d9d9bb;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center;
+  order: 5;
+}
+.amigueros__amigo4 .amigueros__amigo5 .amigo5__descripcion {
+  display: flex;
+  flex-direction: column;
+}
+.amigueros__amigo4 .amigueros__amigo5 .amigo5__descripcion .amigo5__descripcionH3 {
+  color: #1a1a1a;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0.07rem;
+  padding: 0 0 20px 0;
+  margin: auto;
+}
+.amigueros__amigo4 .amigueros__amigo5 .amigo5__descripcion .amigo5__descripcionH3:hover {
+  animation-name: arrow-animation;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+@keyframes arrow-animation {
+  0% {
+    word-spacing: 1;
+  }
+  50% {
+    word-spacing: 1.5rem;
+  }
+  100% {
+    word-spacing: 1;
+  }
+}
+.amigueros__amigo4 .amigueros__amigo5 .amigo5__descripcion .amigo5__descripcionP {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.07rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: auto;
+}
+.amigueros__amigo4 .amigueros__amigo5 .amigo5__multimedia {
+  padding-top: 5vh;
+}
+.amigueros__amigo4 .amigueros__amigo5 .amigo5__multimedia .amigo5__multimediaArchivo {
+  border-radius: 2%;
+  width: 90%;
+  min-height: 500px;
+  object-fit: cover;
+  margin: 5vh auto;
+  display: flex;
+  justify-content: center;
 }
 
 .contactame {
@@ -1041,6 +1166,7 @@ footer .footer__firma {
 
   .amigueros__amigo1 {
     flex-flow: wrap;
+    justify-content: space-around;
   }
   .amigueros__amigo1 .amigo1__descripcion {
     width: 80%;

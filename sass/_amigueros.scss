@@ -13,7 +13,7 @@
 	width: 100%;
 	padding: 15vh 0 15vh 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	order: 3;
 	
 	.amigo1__descripcion {
@@ -23,7 +23,7 @@
 		.amigo1__descripcionH3 {
 			color: $color-claro;
 			@include font(2rem, 800, none);
-			letter-spacing: .15rem;
+			letter-spacing: .07rem;
 			text-align: center;
 			padding: 25px 0;
 			white-space: nowrap;
@@ -58,7 +58,7 @@
 		.amigo1__descripcionP {
 			color: $color-claro;
 			@include font($regular-font, 500, none);
-			letter-spacing: .1rem;
+			letter-spacing: .07rem;
 			line-height: 1.6;
 			text-align: center;
 		}
@@ -88,7 +88,7 @@
 	width: 100%;
 	padding: 10vh 0;
 	@include flex (flex, wrap, center, center);
-	order: 2;
+	order: 4;
 	
 	.amigo2__descripcion {
 		display: flex;
@@ -97,7 +97,7 @@
 		.amigo2__descripcionH3 {
 			color: $color-oscuro;
 			@include font(2rem, 800, none);
-			letter-spacing: .24rem;
+			letter-spacing: .07rem;
 			padding: 0 0 20px 0;
 			margin: auto;
 			
@@ -123,7 +123,7 @@
 		.amigo2__descripcionP {
 			width: 80%;
 			@include font($regular-font, 500, none);
-			letter-spacing: .1rem;
+			letter-spacing: .07rem;
 			line-height: 1.6;
 			text-align: center;
 			margin: auto;
@@ -204,7 +204,7 @@
 		
 		.amigo3__descripcionH3 {
 			@include font(2rem, 800, none);
-			letter-spacing: .24rem;
+			letter-spacing: .07rem;
 			padding: 0 0 20px 0;
 			margin: auto;
 		
@@ -239,9 +239,132 @@
 			width: 80%;
 			margin: auto;
 			@include font($regular-font, 500, none);
-			letter-spacing: .1rem;
+			letter-spacing: .07rem;
 			line-height: 1.6;
 			text-align: center;
+		}
+	}
+}
+
+.amigueros__amigo4 {
+	width: 100%;
+	padding: 10vh 0;
+	background: $color-salmon-light;
+	@include flex (flex, wrap, center, center);
+	order: 2;
+
+	.amigo4__descripcion {
+		display: flex;
+		flex-direction: column;
+
+		.amigo4__descripcionH3 {
+			color: $color-oscuro;
+			@include font(2rem, 800, none);
+			letter-spacing: .07rem;
+			padding: 0 0 20px 0;
+			margin: auto;
+			
+			&:hover {
+				animation-name: arrow-animation;
+				@keyframes arrow-animation {
+					0% {
+						word-spacing: 1;
+					}
+					50% {
+						word-spacing: 1.5rem;
+					}
+					100% {
+						word-spacing: 1;
+					}
+				}
+				animation-iteration-count: 2;
+				animation-timing-function: ease-in;
+				animation-duration: .5s;
+			}
+		}
+
+		.amigo4__descripcionP {
+			width: 80%;
+			@include font($regular-font, 500, none);
+			letter-spacing: .07rem;
+			line-height: 1.6;
+			text-align: center;
+			margin: auto;
+		}
+	}
+
+	.amigo4__multimedia {
+		padding-top: 5vh;
+
+		.amigo4__multimediaArchivo {
+			border-radius: 2%;
+			width: 90%;
+			min-height: 500px;
+			object-fit: cover;
+			margin: 5vh auto;
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	.amigueros__amigo4 {
+	width: 100%;
+	padding: 10vh 0;
+	background: $color-salmon-light;
+	@include flex (flex, wrap, center, center);
+	order: 2;
+
+	.amigo4__descripcion {
+		display: flex;
+		flex-direction: column;
+
+		.amigo4__descripcionH3 {
+			color: $color-oscuro;
+			@include font(2rem, 800, none);
+			letter-spacing: .07rem;
+			padding: 0 0 20px 0;
+			margin: auto;
+			
+			&:hover {
+				animation-name: arrow-animation;
+				@keyframes arrow-animation {
+					0% {
+						word-spacing: 1;
+					}
+					50% {
+						word-spacing: 1.5rem;
+					}
+					100% {
+						word-spacing: 1;
+					}
+				}
+				animation-iteration-count: 2;
+				animation-timing-function: ease-in;
+				animation-duration: .5s;
+			}
+		}
+
+		.amigo4__descripcionP {
+			width: 80%;
+			@include font($regular-font, 500, none);
+			letter-spacing: .07rem;
+			line-height: 1.6;
+			text-align: center;
+			margin: auto;
+		}
+	}
+
+	.amigo4__multimedia {
+		padding-top: 5vh;
+
+		.amigo4__multimediaArchivo {
+			border-radius: 2%;
+			width: 90%;
+			min-height: 500px;
+			object-fit: cover;
+			margin: 5vh auto;
+			display: flex;
+			justify-content: center;
 		}
 	}
 }
