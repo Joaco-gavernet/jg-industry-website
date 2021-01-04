@@ -43,7 +43,6 @@
 		}
 	}
 	
-	
 	.trabajos__work2 {
 		background: no-repeat center/100% url('../img/perro-paisaje-horizontal.jpg');
 		width: 100%;
@@ -109,9 +108,9 @@
 	}
 
 	#trabajos__work4 {
+		background: linear-gradient(to top, #88888800, #00000099);
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(to top, #88888800, #00000099);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -131,15 +130,15 @@
 		background: no-repeat center/100% url('../img/pajarito-ceramica.jpg');
 		width: 100%;
 		background-size: contain;
-		padding: 26.4%;
-		position: relative;
+		padding: 27.1%;
+		position: relative;	
 	}
 
 	.trabajos__work6 {
 		background: no-repeat center/100% url('../img/cafe-flores-frutos.jpg');
 		width: 100%;
 		background-size: contain;
-		padding: 26.4%;
+		padding: 27.1%;
 		position: relative;
 	}
 
@@ -147,15 +146,15 @@
 		background: no-repeat center/100% url('../img/norton.jpg');
 		width: 100%;
 		background-size: contain;
-		padding: 26.4%;
+		padding: 27.1%;
 		position: relative;
 	}
 
 	.trabajos__work8 {
-		background: no-repeat center/100% url('../img/frutos-secos.jpg');
+		background: no-repeat center/100% url('../img/frutos-secos-02.jpg');
 		width: 100%;
 		background-size: contain;
-		padding: 27.0%;
+		padding: 27.1%;
 		position: relative;
 	}
 }

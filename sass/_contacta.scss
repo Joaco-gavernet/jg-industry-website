@@ -39,16 +39,17 @@
 	}
 	
 	.formulario__p {
-		@include font(.9rem, 600, none);
+		@include font(.8rem, 600, none);
 		letter-spacing: .1rem;
 		padding: 0 0 1rem 0;
 		width: 90%;
 	}
 	
 	.formulario__h3 {
-		@include font(.9rem, 800, uppercase);
+		@include font(.7rem, 800, uppercase);
 		letter-spacing: .1rem;
-		padding: 0 0 .5rem 0;
+		width: 80%;
+		margin: auto;
 	}
 	
 	.formulario__form {
