@@ -1,0 +1,7 @@
+.contenedor .contenidoProductos {
+  height: 92vh;
+  background: black;
+}
+.contenedor .contenidoProductos .contenidoProductos__title {
+  font-size: 20px;
+}

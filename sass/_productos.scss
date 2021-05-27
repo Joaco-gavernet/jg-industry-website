@@ -1,0 +1,12 @@
+.contenedor {
+
+  .contenidoProductos {
+    height: 92vh;
+    background: black;
+
+    .contenidoProductos__title {
+      // @include font(2rem, bold, none);
+      font-size: 20px;
+    }
+  }
+}
